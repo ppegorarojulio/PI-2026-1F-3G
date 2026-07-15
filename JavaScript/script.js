@@ -1,1 +1,1 @@
-addEventListener
+const a = 10
