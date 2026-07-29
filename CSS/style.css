@@ -24,7 +24,7 @@ body{
     color: white;
     font-size: 55px;
     letter-spacing: -2px;
-    margin-left: 30px;
+    margin-left: 50px;
     transform: scaleY(0.5);
     font-weight: 800;
 }
@@ -32,6 +32,7 @@ body{
 .menu{
     display: flex;
     gap: 50px;
+    margin-right: 50px;
 }
 
 .menu button{
@@ -51,7 +52,7 @@ body{
 }
 
 .menu button:hover{
-    background: #ff3300;
+    background:#ff1b1b;;
     color: white;
     font-size: 19px
 
@@ -71,7 +72,7 @@ body{
 
 
 .inicio{
-    background: #13325f;
+    background: #0f274c;
     height: 600px;
     position: relative;
     overflow: hidden;
@@ -119,7 +120,7 @@ body{
  }
 
  .texto h1{
-    color: #ff3131;
+    color:#f42d47;
     font-family: 'Poppins', sans-serif;
     font-size: 78px;
     font-weight: 850;
@@ -132,7 +133,6 @@ body{
 
  .texto h2{
     color: transparent;
-    
     -webkit-text-stroke: 2px white;
     font-size: 75px;
     font-weight: 970;
@@ -160,18 +160,22 @@ body{
 
 
 
+
+
+
  .abordagem{
-    width: 100%;
-    height: 500px;
-    background: white;
     display: flex;
-    justify-content:space-between;
-    align-items: center;
-    padding: 90px 120px;
-    position: absolute
+    align-items: flex-start;
+    gap: 80px;
+    height: 600px;
+    position: relative;
+    width: 100%;
+    background: white;
+    padding: 150px 70px;
+    overflow: hidden;
  }
 
- .abordagem::before{
+ .abordagem::after{
     content: "";
     position: absolute;
     bottom: 0;
@@ -179,7 +183,8 @@ body{
     width: 100%;
     height: 40px;
     margin-bottom: -1px;
-    background: white;
+    background: #0f274c;
+    transform: translateX(-35%);
     clip-path: polygon(
         0 100%,
         0 0,
@@ -188,17 +193,131 @@ body{
         100% 100%
     );
  }
-
- .descricao{
-    font-size: 52px;
-    color: #66778c;
-    margin-bottom: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+ .abordagem .descricao{
+    max-width: 585px;
  }
-  
-.descricao p{
-    font-size: 20px;
-    color: #5f5f5f;
-    line-height: 1.7;
+
+ .abordagem .descricao h2{
+    font-size: 50px;
+    font-weight: 720;
+    color: #062447;
+    margin-bottom: 12px;
+    line-height: 1.1;
+ }
+
+ .descricao span{
+    color: #d30303;
+    font-weight: 700;
+ }
+
+ .abordagem .descricao p{
+    font-size: 24px;
+    line-height: 1.6;
+    color: #062447;
+    font-weight: 400;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.teste{
+    background: #0f274c;
+    min-height: 725px;
+    padding: 70px 0;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    
 }
+
+.teste::before{
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 85px;
+    right: 85px;
+    bottom: 50px;
+    border: 4px solid rgb(38, 64, 117);
+    border-radius: 22px;
+    pointer-events: none;
+}
+
+
+.teste h2{
+    color: white;
+    font-size: 75px;
+    text-align: center;
+    margin-bottom: 90px;
+    font-weight: 600;
+    font-size: 45px;
+    margin-top: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.caixa-texto{
+    width: 68%;
+    margin: 0 auto 60px;
+    background-color: #123d68;
+    border-radius: 35px;
+    padding: 35px 45px;
+    box-shadow: 0 12px 15px rgba(1, 3, 36, 0.918);
+    transform: translateY(-65px);
+}
+
+.caixa-texto p{
+    color: white;
+    overflow-wrap: break-word;
+    font-size: 25px;
+    line-height: 1.5;
+    margin: 5px;
+    width: 950px;
+}
+
+.conteudo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo button{
+    width: 300px;
+    height: 85px;
+    border: none;
+    border-radius: 50px;
+    background-color: #ff2352;
+    color: white;
+    font-size: 34px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+    transform: translateX(-300px);
+    gap: 15px;
+}
+
+
+.conteudo button span{
+    font-size: 35px;
+    color: white;
+}
+
+.conteudo button:hover{
+    background-color: #e61d49;
+}
+
 
