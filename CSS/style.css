@@ -12,8 +12,8 @@ body{
 
 .cabecalho{
     width: 100%;
-    height: 90px;
-    background: linear-gradient(to right, #ff2f4b, #a02c3b);
+    height: 115px;
+    background: linear-gradient(to right, #fb3650, #812834);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,15 +22,16 @@ body{
 
 .logo h2{
     color: white;
-    font-size: 40px;
-    letter-spacing: 4px;
-    margin-left: 70px;
+    font-size: 55px;
+    letter-spacing: -2px;
+    margin-left: 30px;
     transform: scaleY(0.5);
+    font-weight: 800;
 }
 
 .menu{
     display: flex;
-    gap: 20px;
+    gap: 50px;
 }
 
 .menu button{
@@ -41,6 +42,7 @@ body{
     padding: 8px 30px;
     cursor: pointer;
     transition: .3s;
+    font-size: 20px;
 }
 
 .menu button p{
@@ -51,6 +53,8 @@ body{
 .menu button:hover{
     background: #ff3300;
     color: white;
+    font-size: 19px
+
 }
 
 .menu button:hover p{
@@ -68,7 +72,7 @@ body{
 
 .inicio{
     background: #13325f;
-    height: 500px;
+    height: 600px;
     position: relative;
     overflow: hidden;
 }
@@ -81,7 +85,7 @@ body{
     width: 100%;
     height: 28px;
     margin-bottom: -1px;
-    background: linear-gradient(to right, #ff2f4b, #a02c3b);
+    background: linear-gradient(to right, #fb3650, #812834);
     clip-path: polygon(
         0 0,
         100% 0,
@@ -110,39 +114,42 @@ body{
     );
 }
  .texto{
-    padding-top: 15px;
-    padding-left: 30px;
+    padding-top: 25px;
+    padding-left: 55px;
  }
 
  .texto h1{
     color: #ff3131;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 78px;
     font-weight: 850;
     text-transform: uppercase;
     letter-spacing: -3px;
     transform: scaleY(0.5);
     width: 100px;
+    line-height: 1.2;
  }
 
  .texto h2{
     color: transparent;
+    
     -webkit-text-stroke: 2px white;
-    font-size: 60px;
-    font-weight: 950;
+    font-size: 75px;
+    font-weight: 970;
     letter-spacing: 8px;
     text-transform: uppercase;
-    margin-top: -80px;
+    margin-top: -100px;
     transform: scaleY(0.5);
     
  }
 
  .texto p{
-    font-size: 16px;
+    font-size: 25px;
     line-height: 30px;
     color: white;
-    width: 480px;
-    margin-top: 20px;
+    width: 620px;
+    margin-top: 10px;
+    
  }
 
 
@@ -155,7 +162,7 @@ body{
 
  .abordagem{
     width: 100%;
-    min-height: 700px;
+    height: 500px;
     background: white;
     display: flex;
     justify-content:space-between;
