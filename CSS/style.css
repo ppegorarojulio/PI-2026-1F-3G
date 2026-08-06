@@ -66,8 +66,8 @@ body{
 .menu button:hover{
     background:#ff1b1b;;
     color: white;
-    font-size: 20px
-
+    font-size: 20px;
+    transition: 2px 1px;
 }
 
 .menu button:hover p{
