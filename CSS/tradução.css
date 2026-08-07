@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: white;
+}
+
+.cabecalho{
+    width: 100%;
+    height: 115px;
+    background: linear-gradient(to right, #fb3650, #812834);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 25px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: 50px;
+}
+
+.logo img{
+    width: 45px;
+    height: auto;
+}
+
+.logo h2{
+    color: white;
+    font-size: 55px;
+    letter-spacing: -2px;
+    margin: 0;
+    transform: scaleY(0.5);
+    font-weight: 800;
+}
+
+.menu{
+    display: flex;
+    gap: 50px;
+    margin-right: 50px;
+}
+
+.menu button{
+    background: transparent;
+    color:white;
+    border: 2px solid white;
+    border-radius: 999px;
+    padding: 8px 30px;
+    cursor: pointer;
+    transition: .3s;
+    font-size: 20px;
+}
+
+.menu button p{
+    color: white;
+    margin: 0;
+}
+
+.menu button:hover{
+    background:#ff1b1b;;
+    color: white;
+    font-size: 20px;
+    transition: 2px 1px;
+}
+
+.menu button:hover p{
+    color: white;
+}
+
+.inicio{
+    background: #0f2c58;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    
+}
+
+.inicio::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 28px;
+    margin-bottom: -1px;
+    background: linear-gradient(to right, #fb3650, #812834);
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 0,
+        50% 0,
+        35% 100%,
+        0 100%
+    );
+}
+
+.inicio::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    margin-bottom: -1px;
+    background: white;
+    clip-path: polygon(
+        0 100%,
+        0 0,
+        52% 0,
+        64% 100%,
+        100% 100%
+    );
+}
+
+
+.titulo::before {
+    content: "Início > Tradução";
+    display: block;
+    color: #ef0836;
+    font-size: 28px;
+    margin-bottom: 2px;
+}
+
+.titulo {
+    max-width: 500px;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.titulo h1 {
+    color: #f5f5f5;
+    font-size: 85px;
+    font-weight: 500;
+    margin: 0 0 18px 0;
+    font-family: Arial, sans-serif;
+}
+
+.titulo p {
+    color: #ffffff;
+    font-size: 22px;
+    line-height: 1.35;
+    margin: 0;
+    max-width: 490px;
+    font-family: Arial, sans-serif;
+}
+
+.titulo button {
+    margin-top: 32px;
+    width: 208px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: #d51d4b;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+}
+
+.titulo button h2 {
+    margin: 0;
+    color: white;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: Arial, sans-serif;
+}
+
+.imagem{
+    position: absolute;
+    top: 60px;      
+    right: 105px; 
+}
+
+.imagem img{
+    width:480px;
+    max-width:100%;
+}
+
+.conteudo{
+    align-items: flex-start;
+    gap: 80px;
+    height: 600px;
+    position: relative;
+    width: 100%;
+    background: white;
+    padding: 80px 70px;
+    overflow: hidden;
+    top: -20px;
+ }
+
+ .conteudo::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    margin-bottom: -1px;
+    background: #0f2c58;
+    transform: translateX(-35%);
+    clip-path: polygon(
+        0 100%,
+        0 0,
+        52% 0,
+        64% 100%,
+        100% 100%
+    );
+
+ }
+
+
+
+
+
+.conteudo h2 {
+    position: relative;
+    z-index: 2;
+    margin: 0 0 14px 48px;
+    color: #062447;
+    font-family: Arial, sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+
+}
+
+.etapas {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.item {
+    width: 90%;
+    min-height: 70px;
+    margin: 0 auto 24px;
+    display: flex;
+    align-items: center;
+    background-color: #d6d6d6;
+    border-radius: 20px;
+    box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.382);
+    box-sizing: border-box;
+}
+
+.item h3 {
+    width: 40%;
+    margin: 0;
+    text-align: center;
+    color: #062447;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.item p {
+    width: 40%;
+    margin: 0;
+    color: #111111;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.3;
+}
+
+
