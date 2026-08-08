@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+
 }
 
 body{
@@ -121,7 +122,7 @@ body{
 
 
 .titulo::before {
-    content: "Início > Tradução";
+    content: "Início > Legendagem";
     display: block;
     color: #ef0836;
     font-size: 28px;
