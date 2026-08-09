@@ -216,6 +216,10 @@ footer p {
     margin-top: 10px;
 }
 
+.saiba-mais {
+        cursor: pointer;
+    }
+
 @media(max-width: 700px) {
 
     .menu {
@@ -238,3 +242,4 @@ footer p {
         text-align: center;
     }
 }
+
