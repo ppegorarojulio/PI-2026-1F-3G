@@ -47,7 +47,9 @@ body{
     margin-right: 50px;
 }
 
-.menu button{
+
+
+.menu a{
     background: transparent;
     color:white;
     border: 2px solid white;
@@ -56,23 +58,18 @@ body{
     cursor: pointer;
     transition: .3s;
     font-size: 20px;
+    text-decoration: none;
 }
 
-.menu button p{
-    color: white;
-    margin: 0;
-}
 
-.menu button:hover{
+.menu a:hover{
     background:#ff1b1b;;
     color: white;
     font-size: 20px;
     transition: 2px 1px;
 }
 
-.menu button:hover p{
-    color: white;
-}
+
 
 .inicio{
     background: #0f2c58;
@@ -464,8 +461,4 @@ body{
 .botao-info:hover .informacao {
     opacity: 1;
     visibility: visible;
-}
-
-.teste {
-    cursor: pointer;
 }

@@ -367,10 +367,6 @@ body {
     width: clamp(110px, 13vw, 180px);
 }
 
-.teste {
-    cursor: pointer;
-}
-
 @media (max-width: 600px) {
 
     .cabecalho {
