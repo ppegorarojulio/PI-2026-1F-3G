@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body{
+    background-color: white;
+}
+
+.cabecalho{
+    width: 100%;
+    height: 115px;
+    background: linear-gradient(to right, #fb3650, #812834);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 25px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: 50px;
+}
+
+.logo img{
+    width: 45px;
+    height: auto;
+}
+
+.logo h2{
+    color: white;
+    font-size: 55px;
+    letter-spacing: -2px;
+    margin: 0;
+    transform: scaleY(0.5);
+    font-weight: 800;
+}
+
+.menu{
+    display: flex;
+    gap: 50px;
+    margin-right: 50px;
+}
+
+.menu a{
+    background: transparent;
+    color:white;
+    border: 2px solid white;
+    border-radius: 999px;
+    padding: 8px 30px;
+    cursor: pointer;
+    transition: .3s;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+.menu a:hover{
+    background:#ff1b1b;;
+    color: white;
+    font-size: 20px;
+    transition: 2px 1px;
+}
+
+
+
+.inicio{
+    background: #0f2c58;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    
+}
+
+.inicio::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 28px;
+    margin-bottom: -1px;
+    background: linear-gradient(to right, #fb3650, #812834);
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 0,
+        50% 0,
+        35% 100%,
+        0 100%
+    );
+}
+
+.inicio::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    margin-bottom: -1px;
+    background: white;
+    clip-path: polygon(
+        0 100%,
+        0 0,
+        52% 0,
+        64% 100%,
+        100% 100%
+    );
+}
+
+.texto{
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+    width: 80%;
+    box-sizing: border-box;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin: 30px auto;
+    margin-top: 110px;
+}
+
+.texto p{
+    margin: 0;
+    line-height: 1.6;
+    text-align: justify;
+    color: #812834;
+}
+
+.secao_principal{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    height: 600px;
+    position: relative;
+    width: 100%;
+    background: white;
+    padding: 50px 70px;
+    overflow: hidden;
+ }
+
+
+.texto1{
+    background-color: #0f2c58;
+    border-radius: 15px;
+    padding: 25px;
+    width: 80%;
+    box-sizing: border-box;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin: 30px auto;
+   
+}
+
+.texto1 p{
+    margin: 0;
+    line-height: 1.6;
+    text-align: justify;
+    color:white;
+}
+ 
+.texto2{
+    background-color: #0f2c58;
+    border-radius: 15px;
+    padding: 25px;
+    width: 80%;
+    box-sizing: border-box;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin: 30px auto;
+  
+}
+
+.texto2 p{
+    margin: 0;
+    line-height: 1.6;
+    text-align: justify;
+    color: white;
+}
+ 
+.final{
+    background: #0f2c58;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixa {
+    width: 70%;
+    padding: 25px 35px;
+    background-color: white;
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.caixa h4 {
+    margin: 0 0 15px;
+    color: #812834;
+    font-size: 22px;
+}
+
+.caixa p {
+    margin: 0;
+    color: #812834;
+    line-height: 1.6;
+    word-break: break-word;
+}
+
+
+
+.rodape {
+    position: relative;
+    height: 200px;
+    background-color:#0f2c58;
+    display: flex;
+    justify-content: center;
+    gap: 320px;
+    padding-top: 55px;
+    overflow: visible;
+}
+
+.rodape::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 250px;
+    background-color: #f5224b;
+
+    clip-path: polygon(
+        0 32%,
+        10% 32%,
+        16.7% 8%,
+        80.2% 8%,
+        87.3% 33%,
+        100% 33%,
+        100% 100%,
+        0 100%
+    );
+}
+
+.rodape button {
+    position: relative;
+    z-index: 2;
+    width: 240px;
+    height: 75px;
+    background: transparent;
+    border: 3px solid white;
+    border-radius: 55px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+}
+
+.rodape img {
+    position: absolute;
+    z-index: 3;
+    width: 190px;
+    top: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.botao-info {
+    position: relative;
+    font-size: 15px;
+}
+
+.informacao {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 350px;
+    padding: 15px;
+    background-color: #ddd;
+    color: black;
+    border-radius: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.botao-info:hover .informacao {
+    opacity: 1;
+    visibility: visible;
+}
