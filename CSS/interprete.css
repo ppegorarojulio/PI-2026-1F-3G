@@ -462,3 +462,9 @@ body{
     opacity: 1;
     visibility: visible;
 }
+
+.botao a{
+    padding-top: 12px;
+    text-align: center;
+    text-decoration: none;
+}
