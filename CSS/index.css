@@ -51,11 +51,7 @@ body {
     justify-content: center;
 }
 
-<<<<<<< HEAD
 .menu a {
-=======
-.menu a{
->>>>>>> a6c9eac88066bb68578efd8c9fe6991ab43e62b2
     background: transparent;
     color: white;
     border: 2px solid white;
@@ -65,7 +61,6 @@ body {
     transition: 0.3s;
     font-size: 20px;
     text-decoration: none;
-<<<<<<< HEAD
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
@@ -78,84 +73,6 @@ body {
 
 /* ===== SEÇÃO INÍCIO ===== */
 .inicio {
-=======
-}
-
-
-.menu a:hover{
-    background:#ff1b1b;;
-    color: white;
-    font-size: 20px;
-    transition: 2px 1px;
-}
-
-
-
-
-
-
-
-/*
- CSS do carrosel
-*/
-
-.carrossel{
-    position: absolute;
-    right: 250px;
-}
-
-.carrossel__card{
-    position: relative;
-    text-align: left;
-    padding-left: 25px;
-    padding-top: 40px;
-    background-color: #f2f2f2;
-    position: left;
-    height: 300px;
-    width: 500px;
-    font-size: 25px;
-    border-radius: 50px;
-    display: none;
-    box-shadow: 10px 5px 5px #ddd;;
-}
-
-.carrossel__card h3{
-    color: #0f2c58;
-}
-
-.carrossel__nav{
-    width: 100%;
-    padding: 20px 0;
-    position: absolute;
-    left: 0;
-    text-align: center;
-}
-
-.carrossel__botao{
-    width: 50px;
-    height: 5px;
-    display: inline-block;
-    background: rgb(139, 139, 139);
-    border-radius: 100px;
-    margin: 0 5px;
-    cursor: pointer;
-    box-shadow: 5px 3px 5px #ddd;
-}
-
-.carrossel__card-presente {
-    display: block;
-}
-
-.carrossel__botao-presente {
-    background: rgba(196, 16, 16, 0.5);
-}
-
-/*
- CSS do carrosel
-*/
-
-.inicio{
->>>>>>> a6c9eac88066bb68578efd8c9fe6991ab43e62b2
     background: #0f2c58;
     min-height: 600px;
     position: relative;
