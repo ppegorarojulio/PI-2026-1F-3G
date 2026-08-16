@@ -2,552 +2,639 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-html {
-    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    width: 100%;
-    background-color: #eeeeee;
-    font-family: Arial, Helvetica, sans-serif;
-    overflow-x: hidden;
+    background-color: white;
 }
 
-.cabecalho,
-.inicio,
-.conteudo,
-.final,
-.rodape {
-    width: 100%;
-}
-
+/* ===== CABEÇALHO ===== */
 .cabecalho {
-    height: clamp(45px, 5vw, 70px);
-    background-color: #f51d4b;
+    width: 100%;
+    min-height: 115px;
+    background: linear-gradient(to right, #fb3650, #812834);
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 0 clamp(10px, 3vw, 45px);
+    padding: 25px 25px;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    gap: clamp(4px, 0.7vw, 8px);
-    flex-shrink: 0;
+    gap: 12px;
+    margin-left: 50px;
 }
 
 .logo img {
-    width: clamp(14px, 2vw, 25px);
-    height: clamp(14px, 2vw, 25px);
-    object-fit: contain;
+    width: 45px;
+    height: auto;
 }
 
 .logo h2 {
     color: white;
-    font-size: clamp(11px, 1.5vw, 22px);
+    font-size: 55px;
+    letter-spacing: -2px;
+    margin: 0;
+    transform: scaleY(0.5);
+    font-weight: 800;
 }
 
 .menu {
-    flex: 1;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: clamp(3px, 0.8vw, 12px);
+    gap: 50px;
+    margin-right: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.menu button {
+.menu a {
     background: transparent;
-    border: 1px solid white;
-    border-radius: 30px;
-    padding: clamp(4px, 0.6vw, 9px) clamp(7px, 1.2vw, 18px);
-}
-
-.menu button p {
     color: white;
-    font-size: clamp(5px, 0.7vw, 11px);
-    white-space: nowrap;
+    border: 2px solid white;
+    border-radius: 999px;
+    padding: 8px 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 20px;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
+.menu a:hover {
+    background: #ff1b1b;
+    color: white;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+    transform: scale(1.02);
+}
+
+/* ===== SEÇÃO INÍCIO ===== */
 .inicio {
-    min-height: 250px;
-    height: 35vw;
-    max-height: 430px;
-    background-color: #06395d;
-    display: flex;
-    align-items: center;
+    background: #0f2c58;
+    min-height: 500px;
     position: relative;
     overflow: hidden;
-    padding: clamp(25px, 6vw, 75px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 60px;
+    flex-wrap: wrap;
 }
 
 .inicio::before {
     content: "";
     position: absolute;
-    inset: 0;
-    opacity: 0.08;
-    background-image:
-        linear-gradient(90deg, transparent 96%, #7191a5 96%),
-        linear-gradient(0deg, transparent 96%, #7191a5 96%);
-    background-size: clamp(30px, 4vw, 55px) clamp(30px, 4vw, 55px);
-}
-
-.titulo {
-    width: 55%;
-    position: relative;
-    z-index: 2;
-}
-
-.titulo::before {
-    content: "Início + Dublagem";
-    display: block;
-    color: #f51d4b;
-    font-size: clamp(6px, 0.7vw, 11px);
-    margin-bottom: clamp(4px, 0.7vw, 9px);
-}
-
-.titulo h1 {
-    color: white;
-    font-size: clamp(22px, 3vw, 45px);
-    font-weight: 500;
-    margin-bottom: clamp(7px, 1vw, 14px);
-}
-
-.titulo p {
-    width: 90%;
-    max-width: 470px;
-    color: #e1e9ed;
-    font-size: clamp(7px, 0.8vw, 13px);
-    line-height: 1.5;
-    margin-bottom: clamp(10px, 1.5vw, 20px);
-}
-
-.titulo button {
-    border: none;
-    background-color: #f51d4b;
-    color: white;
-    border-radius: 20px;
-    padding: clamp(5px, 0.7vw, 10px) clamp(12px, 1.5vw, 25px);
-    font-size: clamp(6px, 0.7vw, 11px);
-}
-
-.imagem {
-    width: 45%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: 2;
-}
-
-.imagem img {
-    width: clamp(100px, 18vw, 260px);
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 28px;
+    background: linear-gradient(to right, #fb3650, #812834);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 50% 0, 35% 100%, 0 100%);
 }
 
 .inicio::after {
     content: "";
     position: absolute;
-    left: 0;
     bottom: 0;
+    left: 0;
     width: 100%;
-    height: 10%;
-    background-color: #eeeeee;
-    clip-path: polygon(
-        0 0,
-        70% 0,
-        76% 100%,
-        100% 100%,
-        100% 100%,
-        0 100%
-    );
+    height: 40px;
+    background: white;
+    clip-path: polygon(0 100%, 0 0, 52% 0, 64% 100%, 100% 100%);
 }
 
+.titulo {
+    flex: 1;
+    min-width: 280px;
+    z-index: 1;
+    padding: 20px 0;
+}
+
+.titulo h1 {
+    color: #f42d47;
+    font-family: 'Poppins', sans-serif;
+    font-size: 78px;
+    font-weight: 850;
+    text-transform: uppercase;
+    letter-spacing: -3px;
+    transform: scaleY(0.5);
+    line-height: 0.8;
+    margin-bottom: 20px;
+}
+
+.titulo p {
+    font-size: 25px;
+    line-height: 30px;
+    color: white;
+    max-width: 620px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.titulo button {
+    background: #ff2352;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 50px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+.titulo button:hover {
+    background: #e61d49;
+    transform: scale(1.05);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5);
+}
+
+.imagem {
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.imagem img {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+}
+
+/* ===== SEÇÃO CONTEÚDO ===== */
 .conteudo {
-    background-color: #eeeeee;
-    padding: clamp(25px, 4vw, 55px) clamp(15px, 5vw, 70px);
+    background: white;
+    padding: 80px 70px 60px 70px;
+    min-height: 450px;
 }
 
 .conteudo h2 {
-    color: #123b59;
-    font-size: clamp(17px, 2vw, 28px);
-    margin-bottom: clamp(10px, 1.5vw, 20px);
+    font-size: 50px;
+    font-weight: 720;
+    color: #062447;
+    text-align: center;
+    margin-bottom: 60px;
 }
 
 .etapas {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: clamp(5px, 0.8vw, 12px);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
 }
 
 .item {
-    width: 100%;
-    min-height: 30px;
-    height: clamp(30px, 3vw, 48px);
-    background-color: #d7d7d7;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
+    background: #f9f9f9;
+    border-radius: 20px;
+    padding: 30px 25px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    border-left: 8px solid #fb3650;
+    transition: 0.3s ease;
+}
+
+.item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.25);
 }
 
 .item h3 {
-    width: 22%;
-    color: #173e5a;
-    text-align: center;
-    font-size: clamp(7px, 0.8vw, 13px);
+    color: #0f2c58;
+    font-size: 28px;
+    margin-bottom: 15px;
 }
 
 .item p {
-    flex: 1;
     color: #333;
-    font-size: clamp(6px, 0.75vw, 12px);
-    line-height: 1.35;
-    padding-right: clamp(8px, 2vw, 20px);
+    font-size: 18px;
+    line-height: 1.6;
 }
 
+/* ===== SEÇÃO FINAL ===== */
 .final {
-    min-height: 300px;
-    height: 40vw;
-    max-height: 500px;
-    background-color: #053656;
+    background: #0f2c58;
+    padding: 60px 70px 80px 70px;
+    min-height: 350px;
     position: relative;
-    padding: clamp(40px, 7vw, 85px) clamp(20px, 8vw, 100px);
-    overflow: hidden;
 }
 
 .final::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -1px;
     left: 0;
     width: 100%;
-    height: 8%;
-    background-color: #eeeeee;
-    clip-path: polygon(
-        0 0,
-        25% 0,
-        34% 100%,
-        100% 100%,
-        100% 0
-    );
+    height: 40px;
+    background: white;
+    clip-path: polygon(0 0, 52% 0, 64% 100%, 100% 0);
+    pointer-events: none;
 }
 
 .cards {
-    width: 100%;
-    height: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: clamp(8px, 1.5vw, 22px);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    position: relative;
+    z-index: 1;
 }
 
 .mais-informacoes {
-    background-color: #08446b;
-    border-radius: clamp(7px, 1vw, 15px);
-    padding: clamp(12px, 2vw, 30px);
-    grid-row: 1 / 3;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .mais-informacoes h3 {
     color: white;
-    font-size: clamp(9px, 1.2vw, 18px);
-    margin-bottom: clamp(10px, 2vw, 25px);
+    font-size: 28px;
+    margin-bottom: 15px;
 }
 
 .mais-informacoes p {
-    color: #d9e4eb;
-    font-size: clamp(6px, 0.8vw, 13px);
-    line-height: 1.5;
+    color: #e0e0e0;
+    font-size: 18px;
+    line-height: 1.6;
 }
 
 .curiosidade {
-    background-color: #08446b;
-    border-radius: clamp(7px, 1vw, 15px);
-    padding: clamp(10px, 1.5vw, 25px);
+    background: #ff2352;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .curiosidade h2 {
-    color: #f51d4b;
-    font-size: clamp(8px, 1vw, 16px);
-    margin-bottom: 7px;
+    color: white;
+    font-size: 32px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
 }
 
 .curiosidade p {
-    color: #dbe5ea;
-    font-size: clamp(6px, 0.75vw, 12px);
-    line-height: 1.45;
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
 }
 
 .botao {
-    background-color: #08446b;
-    border-radius: clamp(7px, 1vw, 15px);
-    padding: clamp(8px, 1.5vw, 22px);
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    gap: 8px;
+    justify-content: center;
+    gap: 20px;
 }
 
 .botao p {
-    flex: 1;
     color: white;
-    font-size: clamp(6px, 0.75vw, 12px);
-    line-height: 1.4;
+    font-size: 20px;
+    line-height: 1.5;
 }
 
 .botao button {
-    flex-shrink: 0;
-    border: none;
-    background-color: #f51d4b;
+    background: #ff2352;
     color: white;
-    font-size: clamp(7px, 0.8vw, 13px);
-    padding: clamp(5px, 0.8vw, 12px) clamp(12px, 2vw, 30px);
-    border-radius: 20px;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 40px;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
 }
 
+.botao button:hover {
+    background: #e61d49;
+    transform: scale(1.05);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* ===== RODAPÉ ===== */
 .rodape {
-    height: clamp(45px, 6vw, 70px);
-    background-color: #f51d4b;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: clamp(10px, 4vw, 50px);
     position: relative;
-    padding: 0 10px;
+    min-height: 200px;
+    background-color: #0f2c58;
+    display: flex;
+    justify-content: center;
+    gap: 320px;
+    padding: 55px 20px 30px;
+    overflow: visible;
+    flex-wrap: wrap;
+}
+
+.rodape::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 250px;
+    background-color: #f5224b;
+    clip-path: polygon(0 32%, 10% 32%, 16.7% 8%, 80.2% 8%, 87.3% 33%, 100% 33%, 100% 100%, 0 100%);
+}
+
+.rodape button {
+    position: relative;
+    z-index: 2;
+    width: 240px;
+    height: 75px;
+    background: transparent;
+    border: 3px solid white;
+    border-radius: 55px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.rodape button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    transform: scale(1.02);
+}
+
+.rodape img {
+    position: absolute;
+    z-index: 3;
+    width: 190px;
+    top: 55px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .botao-info {
     position: relative;
-}
-
-.botao-info > button {
-    border: 1px solid white;
-    border-radius: 20px;
-    background-color: transparent;
-    color: white;
-    padding: clamp(4px, 0.7vw, 9px) clamp(10px, 2vw, 30px);
-    font-size: clamp(6px, 0.7vw, 11px);
-}
-
-.rodape > img {
-    width: clamp(35px, 5vw, 70px);
-    height: auto;
-    max-height: 30px;
-    object-fit: contain;
+    font-size: 15px;
+    z-index: 2;
 }
 
 .informacao {
     position: absolute;
-    bottom: 45px;
+    bottom: 100%;
     left: 50%;
     transform: translateX(-50%);
-    width: clamp(120px, 15vw, 200px);
-    padding: 10px;
-    background-color: white;
-    border-radius: 7px;
-    color: #333;
-    font-size: clamp(6px, 0.6vw, 10px);
-    line-height: 1.4;
-    box-shadow: 0 2px 8px rgba(0,0,0,.2);
-    display: none;
-    z-index: 50;
+    width: 350px;
+    padding: 15px;
+    background-color: #ddd;
+    color: black;
+    border-radius: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
 }
 
 .botao-info:hover .informacao {
-    display: block;
+    opacity: 1;
+    visibility: visible;
 }
 
-.contato {
-    width: clamp(110px, 13vw, 180px);
-}
-
-@media (max-width: 600px) {
-
-    .cabecalho {
-        height: 45px;
-        padding: 0 7px;
-    }
-
-    .logo {
-        gap: 3px;
-    }
-
-    .logo img {
-        width: 12px;
-        height: 12px;
-    }
-
-    .logo h2 {
-        font-size: 9px;
-    }
-
-    .menu {
-        gap: 2px;
-    }
-
-    .menu button {
-        padding: 3px 5px;
-    }
-
-    .menu button p {
-        font-size: 4px;
-    }
-
-    .inicio {
-        height: 240px;
-        padding: 30px 18px;
-    }
-
-    .titulo {
-        width: 58%;
-    }
-
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 1200px) {
     .titulo h1 {
-        font-size: 21px;
+        font-size: 60px;
     }
-
     .titulo p {
-        width: 100%;
-        font-size: 6px;
+        font-size: 22px;
     }
-
-    .imagem {
-        width: 42%;
-    }
-
     .imagem img {
-        width: 100px;
+        max-width: 380px;
     }
-
-    .conteudo {
-        padding: 22px 14px;
-    }
-
-    .conteudo h2 {
-        font-size: 16px;
-    }
-
-    .item {
-        height: 27px;
-    }
-
-    .item h3 {
-        width: 25%;
-        font-size: 5px;
-    }
-
-    .item p {
-        font-size: 4.5px;
-        padding-right: 7px;
-    }
-
-    .final {
-        height: 250px;
-        padding: 40px 20px 18px;
-    }
-
-    .cards {
-        gap: 7px;
-    }
-
-    .mais-informacoes {
-        padding: 10px;
-    }
-
-    .mais-informacoes h3 {
-        font-size: 8px;
-        margin-bottom: 10px;
-    }
-
-    .mais-informacoes p,
-    .curiosidade p,
-    .botao p {
-        font-size: 4.5px;
-    }
-
-    .curiosidade {
-        padding: 8px;
-    }
-
-    .curiosidade h2 {
-        font-size: 7px;
-    }
-
-    .botao {
-        padding: 6px;
-    }
-
-    .botao button {
-        font-size: 6px;
-        padding: 5px 11px;
-    }
-
     .rodape {
-        height: 40px;
-        gap: 10px;
-    }
-
-    .rodape > img {
-        width: 38px;
-    }
-
-    .botao-info > button {
-        font-size: 5px;
-        padding: 4px 10px;
+        gap: 150px;
     }
 }
 
-@media (max-width: 360px) {
-
-    .menu button {
-        padding: 3px 4px;
+@media (max-width: 992px) {
+    .cabecalho {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
     }
-
-    .menu button p {
-        font-size: 3.5px;
+    .logo {
+        margin-left: 0;
     }
-
+    .menu {
+        margin-right: 0;
+        gap: 15px;
+        justify-content: center;
+    }
+    .menu a {
+        font-size: 16px;
+        padding: 6px 20px;
+    }
     .inicio {
-        padding-left: 15px;
-        padding-right: 12px;
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
     }
-
+    .titulo {
+        text-align: center;
+        padding: 20px 0;
+    }
     .titulo h1 {
+        font-size: 48px;
+        transform: scaleY(0.6);
+    }
+    .titulo p {
+        font-size: 20px;
+        max-width: 100%;
+        margin: 10px auto;
+    }
+    .titulo button {
+        margin: 0 auto;
+    }
+    .imagem {
+        margin-top: 20px;
+    }
+    .imagem img {
+        max-width: 320px;
+    }
+    .conteudo {
+        padding: 60px 30px 40px 30px;
+    }
+    .conteudo h2 {
+        font-size: 38px;
+    }
+    .etapas {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .final {
+        padding: 40px 30px 60px 30px;
+    }
+    .cards {
+        grid-template-columns: 1fr;
+    }
+    .rodape {
+        gap: 80px;
+        padding: 40px 20px;
+    }
+    .rodape img {
+        width: 150px;
+        top: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu a {
+        font-size: 14px;
+        padding: 5px 15px;
+    }
+    .logo h2 {
+        font-size: 40px;
+    }
+    .logo img {
+        width: 35px;
+    }
+    .titulo h1 {
+        font-size: 36px;
+        transform: scaleY(0.7);
+    }
+    .titulo p {
         font-size: 18px;
     }
-
-    .titulo p {
-        font-size: 5px;
+    .titulo button {
+        padding: 12px 35px;
+        font-size: 20px;
     }
-
     .imagem img {
-        width: 85px;
+        max-width: 260px;
     }
-
+    .conteudo {
+        padding: 40px 20px 30px 20px;
+    }
+    .conteudo h2 {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+    .etapas {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .item {
+        padding: 20px;
+    }
     .item h3 {
-        width: 27%;
+        font-size: 24px;
     }
-
     .item p {
-        font-size: 4px;
+        font-size: 16px;
     }
-
     .final {
-        padding-left: 15px;
-        padding-right: 15px;
+        padding: 30px 20px 50px 20px;
     }
-
+    .mais-informacoes h3 {
+        font-size: 24px;
+    }
+    .curiosidade h2 {
+        font-size: 26px;
+    }
+    .botao p {
+        font-size: 18px;
+    }
+    .botao button {
+        padding: 12px 30px;
+        font-size: 18px;
+    }
     .rodape {
-        gap: 6px;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 30px 15px 20px;
+        min-height: 300px;
     }
+    .rodape img {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        width: 130px;
+        margin: 10px auto;
+    }
+    .rodape::before {
+        height: 180px;
+        clip-path: polygon(0 20%, 10% 20%, 20% 5%, 80% 5%, 90% 20%, 100% 20%, 100% 100%, 0 100%);
+    }
+    .informacao {
+        width: 280px;
+        font-size: 14px;
+    }
+}
 
-    .rodape > img {
-        width: 32px;
+@media (max-width: 480px) {
+    .logo h2 {
+        font-size: 32px;
+    }
+    .menu a {
+        font-size: 12px;
+        padding: 4px 12px;
+    }
+    .titulo h1 {
+        font-size: 28px;
+        transform: scaleY(0.8);
+    }
+    .titulo p {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+    .titulo button {
+        padding: 10px 25px;
+        font-size: 16px;
+    }
+    .imagem img {
+        max-width: 200px;
+    }
+    .conteudo h2 {
+        font-size: 26px;
+    }
+    .item h3 {
+        font-size: 20px;
+    }
+    .item p {
+        font-size: 15px;
+    }
+    .mais-informacoes h3 {
+        font-size: 20px;
+    }
+    .mais-informacoes p {
+        font-size: 16px;
+    }
+    .curiosidade h2 {
+        font-size: 22px;
+    }
+    .curiosidade p {
+        font-size: 16px;
+    }
+    .botao p {
+        font-size: 16px;
+    }
+    .botao button {
+        padding: 10px 25px;
+        font-size: 16px;
+    }
+    .rodape button {
+        width: 180px;
+        height: 60px;
+        font-size: 20px;
+    }
+    .informacao {
+        width: 230px;
+        font-size: 13px;
+        padding: 12px;
     }
 }
