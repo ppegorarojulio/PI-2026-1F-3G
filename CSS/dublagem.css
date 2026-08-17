@@ -302,7 +302,7 @@ body {
     line-height: 1.5;
 }
 
-.botao button {
+.botao a {
     background: #ff2352;
     color: white;
     border: none;
@@ -315,7 +315,7 @@ body {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
 }
 
-.botao button:hover {
+.botao a:hover {
     background: #e61d49;
     transform: scale(1.05);
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5);
