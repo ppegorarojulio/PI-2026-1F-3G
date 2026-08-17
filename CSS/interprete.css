@@ -9,7 +9,6 @@ body {
     background-color: white;
 }
 
-/* ===== CABEÇALHO ===== */
 .cabecalho {
     width: 100%;
     min-height: 115px;
@@ -71,7 +70,7 @@ body {
     transform: scale(1.02);
 }
 
-/* ===== SEÇÃO INÍCIO ===== */
+
 .inicio {
     background: #0f2c58;
     min-height: 500px;
@@ -134,7 +133,7 @@ body {
     margin-bottom: 30px;
 }
 
-.titulo button {
+.titulo a {
     background: #ff2352;
     color: white;
     border: none;
@@ -147,7 +146,7 @@ body {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
 }
 
-.titulo button:hover {
+.titulo a:hover {
     background: #e61d49;
     transform: scale(1.05);
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5);
@@ -215,7 +214,7 @@ body {
     line-height: 1.6;
 }
 
-/* ===== SEÇÃO FINAL ===== */
+
 .final {
     background: #0f2c58;
     padding: 60px 70px 80px 70px;
@@ -404,7 +403,8 @@ body {
     visibility: visible;
 }
 
-/* ===== RESPONSIVIDADE ===== */
+
+
 @media (max-width: 1200px) {
     .titulo h1 {
         font-size: 60px;
