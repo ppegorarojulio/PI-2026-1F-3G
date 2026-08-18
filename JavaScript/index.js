@@ -15,21 +15,36 @@ document.querySelectorAll(".carrossel").forEach((carrossel) => {
 
   const botoes = carrossel.querySelectorAll(".carrossel__botao");
 
-  botoes.forEach((botao, i) => {
-    botao.addEventListener("click", () => {
-      items.forEach((item) =>
-        item.classList.remove("carrossel__card-presente")
-      );
-      botoes.forEach((botao) =>
-        botao.classList.remove("carrossel__botao-presente")
-      );
+  let indexAtual = 0;
 
-      items[i].classList.add("carrossel__card-presente");
-      botao.classList.add("carrossel__botao-presente");
+  function atualizarCarrossel(indexNovo) {
+    items[indexAtual].classList.remove('carrossel__card-presente');
+    botoes[indexAtual].classList.remove('carrossel__botao-presente');
+    
+    indexAtual = (indexNovo + items.length) % items.length;
+    
+    items[indexAtual].classList.add('carrossel__card-presente');
+    botoes[indexAtual].classList.add('carrossel__botao-presente');
+  }
+
+
+  window.addEventListener('keydown', (event) => {
+    const tecla = event.key;
+    if (tecla === 'ArrowRight' || tecla.toLowerCase() === 'd') {
+      atualizarCarrossel(indexAtual + 1);
+  } else if (tecla === 'ArrowLeft' || tecla.toLowerCase() === 'a') {
+      atualizarCarrossel(indexAtual - 1);
+  }
+  });
+  
+ botoes.forEach((botao, i) => {
+    botao.addEventListener('click', () => {
+      atualizarCarrossel(i);
     });
   });
 
  
   items[0].classList.add("carrossel__card-presente");
   botoes[0].classList.add("carrossel__botao-presente");
+
 });

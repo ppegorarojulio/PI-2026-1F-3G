@@ -165,47 +165,47 @@ body {
  CSS do carrosel / js
 */
 
-.carrossel{
+.carrossel {
     position: absolute;
-    right: 250px;
+    right: 500px;
 }
 
-.carrossel__card{
+.carrossel__card {
+    margin-top: -100px;
     position: relative;
     text-align: left;
     padding-left: 25px;
-    padding-top: 40px;
-    background-color: #f2f2f2;
-    position: left;
-    height: 300px;
-    width: 500px;
-    font-size: 25px;
+    padding-top: 100px;
+    background-color: rgb(242, 242, 242);
+    height: 500px;
+    width: 600px;
+    font-size: 40px;
     border-radius: 50px;
     display: none;
-    box-shadow: 10px 5px 5px #ddd;;
+    box-shadow: rgb(221, 221, 221) 10px 5px 5px;
 }
 
-.carrossel__card h3{
-    color: #0f2c58;
+.carrossel__card h3 {
+    color: rgb(15, 44, 88);
 }
 
-.carrossel__nav{
+.carrossel__nav {
     width: 100%;
-    padding: 20px 0;
+    padding: 20px 0px;
     position: absolute;
-    left: 0;
+    left: 0px;
     text-align: center;
 }
 
-.carrossel__botao{
+.carrossel__botao {
     width: 50px;
     height: 5px;
     display: inline-block;
     background: rgb(139, 139, 139);
     border-radius: 100px;
-    margin: 0 5px;
+    margin: 0px 5px;
     cursor: pointer;
-    box-shadow: 5px 3px 5px #ddd;
+    box-shadow: rgb(221, 221, 221) 5px 3px 5px;
 }
 
 .carrossel__card-presente {
@@ -216,11 +216,6 @@ body {
     background: rgba(196, 16, 16, 0.5);
 }
 
-/*
- CSS do carrosel
-*/
-
-/* ===== ABORDAGEM ===== */
 .abordagem {
     display: flex;
     align-items: flex-start;
@@ -229,7 +224,7 @@ body {
     position: relative;
     width: 100%;
     background: white;
-    padding: 150px 70px;
+    padding: 150px;
     overflow: hidden;
     flex-wrap: wrap;
 }
@@ -237,38 +232,38 @@ body {
 .abordagem::after {
     content: "";
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 0px;
+    left: 0px;
     width: 100%;
     height: 40px;
-    background: #0f2c58;
+    background: rgb(15, 44, 88);
     transform: translateX(-35%);
-    clip-path: polygon(0 100%, 0 0, 52% 0, 64% 100%, 100% 100%);
+    clip-path: polygon(0px 100%, 0px 0px, 52% 0px, 64% 100%, 100% 100%);
 }
 
 .abordagem .descricao {
     max-width: 585px;
-    flex: 1;
+    flex: 1 1 0%;
     min-width: 260px;
 }
 
 .abordagem .descricao h2 {
     font-size: 50px;
     font-weight: 720;
-    color: #062447;
+    color: rgb(6, 36, 71);
     margin-bottom: 12px;
     line-height: 1.1;
 }
 
 .descricao span {
-    color: #d30303;
+    color: rgb(211, 3, 3);
     font-weight: 700;
 }
 
 .abordagem .descricao p {
-    font-size: 24px;
+    font-size: 28px;
     line-height: 1.6;
-    color: #062447;
+    color: rgb(6, 36, 71);
     font-weight: 400;
 }
 
