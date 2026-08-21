@@ -78,6 +78,37 @@ body{
     transform: scale(1.02);
 }
 
+.linguagemBotoes {
+    display: flex;
+    gap: 5px;
+    margin-left: auto;
+}
+
+.linguagemBt {
+    margin-left: 75px;
+    min-width: 100px;
+    width:100%;
+    padding: 12px 12px;
+    border: 2px solid #333;
+    background: white;
+    cursor: pointer;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: all 0.3s;
+    font-size: 14px;
+}
+
+.linguagemBt:hover {
+    background: #f0f0f0;
+    transform: scale(1.05);
+}
+
+.linguagemBt.active {
+    background: #4CAF50;
+    color: white;
+    border-color: #208123;
+}
+
 .inicio{
     background: #0f2c58;
     height: 400px;

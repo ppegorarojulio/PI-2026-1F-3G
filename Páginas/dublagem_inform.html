@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,73 +8,63 @@
 </head>
 
 <body>
-
-    
     <header class="cabecalho">
         <div class="logo">
             <img src="../Imagens/img_tidle.png" alt="Logo TIDLE">
             <h2>TIDLE</h2>
+            <div class="linguagemBotoes">
+                <button class="linguagemBt active" data-lang="pt">pt-🇧🇷</button>
+                <button class="linguagemBt" data-lang="en">en-🇺🇸</button>
+            </div>
         </div>
-            
         <nav class="menu">
-            <a href="../index.html">Início</a>
-            <a href="traducao.html">Tradução</a>
-            <a href="dublagem.html">Dublagem</a>
-            <a href="legenda.html">Legendagem</a>
-            <a href="interpretes.html">Intérpretes</a>
+            <a href="../index.html" data-translate="menu.inicio">Início</a>
+            <a href="traducao.html" data-translate="menu.traducao">Tradução</a>
+            <a href="dublagem.html" data-translate="menu.dublagem">Dublagem</a>
+            <a href="legenda.html" data-translate="menu.legenda">Legendagem</a>
+            <a href="interpretes.html" data-translate="menu.interpretes">Intérpretes</a>
         </nav>
     </header>
 
-
     <div class="inicio">
-
         <div class="imagem">
             <img src="" alt="">
         </div>
-
         <div class="texto">
-            <p>A dublagem consiste em substituir a voz original dos personagens por falas em outro idioma. Para isso, o dublador, que é um ator especializado, precisa sincronizar sua fala com os movimentos da boca do personagem original, criando a sensação de que ele realmente está falando aquela nova língua.</p>
+            <p data-translate="dublagem_inform.paragrafo1">A dublagem consiste em substituir a voz original dos personagens por falas em outro idioma. Para isso, o dublador, que é um ator especializado, precisa sincronizar sua fala com os movimentos da boca do personagem original, criando a sensação de que ele realmente está falando aquela nova língua.</p>
         </div>
-
     </div>
 
     <div class="secao_principal">
-
         <div class="texto1">
-            <p>O papel da dublagem é muito importante para trazer filmes, séries, desenhos e outros conteúdos internacionais para diferentes países. Além de ajudar na inclusão do público, a dublagem também permite adaptar piadas, expressões e referências culturais para a realidade de cada lugar, aumentando o alcance das produções e permitindo que mais pessoas consumam esses conteúdos, além de dar uma  contemplação visual ao poupar ao espectador a leitura da legenda.</p>
+            <p data-translate="dublagem_inform.paragrafo2">O papel da dublagem é muito importante para trazer filmes, séries, desenhos e outros conteúdos internacionais para diferentes países. Além de ajudar na inclusão do público, a dublagem também permite adaptar piadas, expressões e referências culturais para a realidade de cada lugar, aumentando o alcance das produções e permitindo que mais pessoas consumam esses conteúdos, além de dar uma contemplação visual ao poupar ao espectador a leitura da legenda.</p>
         </div>
-
         <div class="imagem1">
             <img src="" alt="">
         </div>
-
         <div class="imagem2">
             <img src="" alt="">
         </div>
-
         <div class="texto2">
-            <p> O trabalho de composição do dublador inicia-se pela referência das imagens no produto audiovisual, que servirão de insumo para a criação de suas imagens endógenas e preenchimento de seus sentimentos, e formalmente delimitarão parte da composição final. Para a dublagem, as circunstâncias dadas são a própria obra audiovisual, que já está completamente finalizada. É possível conferir nas cenas os personagens, os ambientes, os gestos, as intenções, a atmosfera, as ações etc.</p>
+            <p data-translate="dublagem_inform.paragrafo3">O trabalho de composição do dublador inicia-se pela referência das imagens no produto audiovisual, que servirão de insumo para a criação de suas imagens endógenas e preenchimento de seus sentimentos, e formalmente delimitarão parte da composição final. Para a dublagem, as circunstâncias dadas são a própria obra audiovisual, que já está completamente finalizada. É possível conferir nas cenas os personagens, os ambientes, os gestos, as intenções, a atmosfera, as ações etc.</p>
         </div>
-
     </div>
 
     <div class="final">
-
         <div class="caixa">
-            <h4>Fontes</h4>
-            <a href="https://revistas.usp.br/novosolhares/pt_BR/article/view/163697/161942"> https://revistas.usp.br/novosolhares/pt_BR/article/view/163697/161942 </a> <br>
+            <h4 data-translate="fontes.titulo">Fontes</h4>
+            <a href="https://revistas.usp.br/novosolhares/pt_BR/article/view/163697/161942">https://revistas.usp.br/novosolhares/pt_BR/article/view/163697/161942</a> <br>
             <a href="https://www.overleaf.com/read/dwhhyxmqqcsg#0aac4d">
-            <strong>Nosso artigo:</strong> https://www.overleaf.com/read/dwhhyxmqqcsg#0aac4d
+            <strong data-translate="fontes.artigo">Nosso artigo:</strong> https://www.overleaf.com/read/dwhhyxmqqcsg#0aac4d
             </a>
         </div>
-
     </div>
     
     <footer class="rodape">
         <div class="botao-info">
-            <button>Sobre Nós</button>
+            <button data-translate="footer.sobre">Sobre Nós</button>
             <div class="informacao">
-                <p>
+                <p data-translate="footer.sobre_texto">
                   📍Nós somos estudantes do Primeiro Ano do EM
                     do Instituto Federal Catarinense - Campus
                     Concórdia, cursamos informática para internet.
@@ -86,14 +75,13 @@
         </div>
         <img src="../Imagens/logoifcconcórdia.png" alt="Logo IFC">
         <div class="botao-info">
-            <button>Contato</button>
-            <div class="informacao contato">
-                ✉️ 3gruppi@gmail.com
+            <button data-translate="footer.contato">Contato</button>
+            <div class="informacao contato" data-translate="footer.contato_texto">
+                ✉️ 3grupopi@gmail.com
             </div>
         </div>
-
     </footer>
-        
+    
+    <script src="../JavaScript/traducao_inform.js"></script>
 </body>
-
 </html>

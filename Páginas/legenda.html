@@ -5,98 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../CSS/conceitos.css">
     <title>Legendagem - TIDLE</title>
-
 </head>
 
 <body>
-
     <header class="cabecalho">
-
         <div class="logo">
             <img src="../Imagens/img_tidle.png" alt="Logo TIDLE">
             <h2>TIDLE</h2>
+            <div class="linguagemBotoes">
+                <button class="linguagemBt active" data-lang="pt">pt-🇧🇷</button>
+                <button class="linguagemBt" data-lang="en">en-🇺🇸</button>
+            </div>
         </div>
         <nav class="menu">
-            <a href="../index.html">Início</a>
-            <a href="traducao.html">Tradução</a>
-            <a href="dublagem.html">Dublagem</a>
-            <a href="legenda.html">Legendagem</a>
-            <a href="interpretes.html">Intérpretes</a>
+            <a href="../index.html" data-translate="menu.inicio">Início</a>
+            <a href="traducao.html" data-translate="menu.traducao">Tradução</a>
+            <a href="dublagem.html" data-translate="menu.dublagem">Dublagem</a>
+            <a href="legenda.html" data-translate="menu.legenda">Legendagem</a>
+            <a href="interpretes.html" data-translate="menu.interpretes">Intérpretes</a>
         </nav>
-
     </header>
 
     <section class="inicio">
         <div class="titulo">
-            <h1>Legendagem</h1>
-            <p>A legendagem transforma falas, sons e informações de conteúdos audiovisuais em texto, tornando a comunicação mais acessível para diferentes públicos.</p>
-            <a href="legenda_inform.html">Saiba Mais</a>
+            <h1 data-translate="legenda.titulo">Legendagem</h1>
+            <p data-translate="legenda.subtitulo">A legendagem transforma falas, sons e informações de conteúdos audiovisuais em texto, tornando a comunicação mais acessível para diferentes públicos.</p>
+            <a href="legenda_inform.html" data-translate="botao.saiba_mais">Saiba Mais</a>
         </div>
-
         <div class="imagem">
             <img src="../Imagens/img_legendagem.png" alt="Legendas img">
         </div>
-
     </section>
 
     <section class="conteudo">
-
-        <h2>Como funciona?</h2>
-
+        <h2 data-translate="legenda.como_funciona">Como funciona?</h2>
         <div class="etapas">
-
             <div class="item">
-                <h3>Transcrição do Conteúdo</h3>
-                <p>O primeiro passo é transformar as falas e sons relevantes do vídeo em texto escrito.</p>
+                <h3 data-translate="legenda.etapa1_titulo">Transcrição do Conteúdo</h3>
+                <p data-translate="legenda.etapa1_desc">O primeiro passo é transformar as falas e sons relevantes do vídeo em texto escrito.</p>
             </div>
-
             <div class="item">
-                <h3>Tradução e Adaptação</h3>
-                <p>Quando necessário, o conteúdo é traduzido e adaptado para outro idioma, mantendo seu significado original.</p>
+                <h3 data-translate="legenda.etapa2_titulo">Tradução e Adaptação</h3>
+                <p data-translate="legenda.etapa2_desc">Quando necessário, o conteúdo é traduzido e adaptado para outro idioma, mantendo seu significado original.</p>
             </div>
-
             <div class="item">
-                <h3>Sincronização</h3>
-                <p>As legendas precisam aparecer e desaparecer nos momentos corretos para acompanhar as falas e ações da cena.</p>
+                <h3 data-translate="legenda.etapa3_titulo">Sincronização</h3>
+                <p data-translate="legenda.etapa3_desc">As legendas precisam aparecer e desaparecer nos momentos corretos para acompanhar as falas e ações da cena.</p>
             </div>
-
             <div class="item">
-                <h3>Ferramentas Utilizadas</h3>
-                <p>Os profissionais utilizam softwares específicos para criar, editar, sincronizar e revisar legendas.</p>
+                <h3 data-translate="legenda.etapa4_titulo">Ferramentas Utilizadas</h3>
+                <p data-translate="legenda.etapa4_desc">Os profissionais utilizam softwares específicos para criar, editar, sincronizar e revisar legendas.</p>
             </div>
-
-        </div>    
-
-        </section>
-
-    <section class="final">
-
-        <div class="cards">
-            <div class="mais-informacoes">
-                <h3>Tipos de Legendas</h3>
-                <p>Existem legendas traduzidas, legendas no mesmo idioma e legendas acessíveis para pessoas surdas ou com deficiência auditiva.</p>
-            </div>
-
-            <div class="curiosidade">
-                <h2>CURIOSIDADE</h2>
-                <p>Legendas também descrevem sons importantes, como músicas, risadas, aplausos e efeitos sonoros.</p>
-            </div>
-
-            <div class="botao">
-                <p>Acesse nossa experiência única de dublar!</p>
-                <a href="pg_interativa.html">Testar</a>
-            </div>
-        </div>    
-
+        </div>
     </section>
 
-   <footer class="rodape">
+    <section class="final">
+        <div class="cards">
+            <div class="mais-informacoes">
+                <h3 data-translate="legenda.info_titulo">Tipos de Legendas</h3>
+                <p data-translate="legenda.info_desc">Existem legendas traduzidas, legendas no mesmo idioma e legendas acessíveis para pessoas surdas ou com deficiência auditiva.</p>
+            </div>
+            <div class="curiosidade">
+                <h2 data-translate="legenda.curiosidade_titulo">CURIOSIDADE</h2>
+                <p data-translate="legenda.curiosidade_desc">Legendas também descrevem sons importantes, como músicas, risadas, aplausos e efeitos sonoros.</p>
+            </div>
+            <div class="botao">
+                <p data-translate="botao.dublar">Acesse nossa experiência única de dublar!</p>
+                <a href="pg_interativa.html" data-translate="botao.testar">Testar</a>
+            </div>
+        </div>
+    </section>
 
+    <footer class="rodape">
         <div class="botao-info">
-            <button>Sobre Nós</button>
+            <button data-translate="footer.sobre">Sobre Nós</button>
             <div class="informacao">
-                <p>
-                  📍Nós somos estudantes do Primeiro Ano do EM
+                <p data-translate="footer.sobre_texto">
+                    📍Nós somos estudantes do Primeiro Ano do EM
                     do Instituto Federal Catarinense - Campus
                     Concórdia, cursamos informática para internet.
                     Criamos esse site com o intuito de disponibilizar
@@ -106,14 +91,13 @@
         </div>
         <img src="../Imagens/logoifcconcórdia.png" alt="Logo IFC">
         <div class="botao-info">
-            <button>Contato</button>
-            <div class="informacao contato">
-                ✉️ 3gruppi@gmail.com
+            <button data-translate="footer.contato">Contato</button>
+            <div class="informacao contato" data-translate="footer.contato_texto">
+                ✉️ 3grupopi@gmail.com
             </div>
         </div>
-
     </footer>
 
+    <script src="../JavaScript/traducao.js"></script>
 </body>
- 
 </html>

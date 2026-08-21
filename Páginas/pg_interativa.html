@@ -7,26 +7,29 @@
     <title>Experimente dublar</title>
 </head>
 <body>
-    
     <header class="cabecalho">
         <div class="logo">
             <img src="../Imagens/img_tidle.png" alt="Logo TIDLE">
             <h2>TIDLE</h2>
+            <div class="linguagemBotoes">
+                <button class="linguagemBt active" data-lang="pt">pt-🇧🇷</button>
+                <button class="linguagemBt" data-lang="en">en-🇺🇸</button>
+            </div>
         </div>
         <nav class="menu">
-            <a href="../index.html">Início</a>
-            <a href="traducao.html">Tradução</a>
-            <a href="dublagem.html">Dublagem</a>
-            <a href="legenda.html">Legendagem</a>
-            <a href="interpretes.html">Intérpretes</a>
+            <a href="../index.html" data-translate="menu.inicio">Início</a>
+            <a href="traducao.html" data-translate="menu.traducao">Tradução</a>
+            <a href="dublagem.html" data-translate="menu.dublagem">Dublagem</a>
+            <a href="legenda.html" data-translate="menu.legenda">Legendagem</a>
+            <a href="interpretes.html" data-translate="menu.interpretes">Intérpretes</a>
         </nav>
     </header>
 
     <div class="inicio">
         <div class="texto">
-            <h1>EXPERIMENTE </h1>
-            <h2>DUBLAR</h2>
-            <p>Tenha a oportunidade de sentir na pele, ou melhor, na voz a experiência dos dubladores!</p>
+            <h1 data-translate="interativa.titulo1">EXPERIMENTE</h1>
+            <h2 data-translate="interativa.titulo2">DUBLAR</h2>
+            <p data-translate="interativa.descricao">Tenha a oportunidade de sentir na pele, ou melhor, na voz a experiência dos dubladores!</p>
         </div>
         <div class="imagem">
             <img src="../Imagens/interativa.png" alt="Imagem de um dublador">
@@ -34,32 +37,27 @@
     </div>
 
     <div class="cards">
-
-        <h2>Passos:</h2>
+        <h2 data-translate="interativa.passos">Passos:</h2>
         <br>
-
         <div class="card">
-            <h3>Seu vídeo:</h3>
-            <p>Escolha algum vídeo da sua galeria ou o link do youtube.</p>
+            <h3 data-translate="interativa.passo1_titulo">Seu vídeo:</h3>
+            <p data-translate="interativa.passo1_desc">Escolha algum vídeo da sua galeria ou o link do youtube.</p>
         </div>
-
         <div class="card">
-            <h3>Dublar</h3>
-            <p>Escolha o trecho do vídeo, duble de acordo com os modos disponíveis.</p>
+            <h3 data-translate="interativa.passo2_titulo">Dublar</h3>
+            <p data-translate="interativa.passo2_desc">Escolha o trecho do vídeo, duble de acordo com os modos disponíveis.</p>
         </div>
-
         <div class="card">
-            <h3>Ver</h3>
-            <p>Veja o resultado final ou baixe-o.</p>
+            <h3 data-translate="interativa.passo3_titulo">Ver</h3>
+            <p data-translate="interativa.passo3_desc">Veja o resultado final ou baixe-o.</p>
         </div>
     </div>
 
     <footer class="rodape">
-
         <div class="botao-info">
-            <button>Sobre Nós</button>
+            <button data-translate="footer.sobre">Sobre Nós</button>
             <div class="informacao">
-                <p>
+                <p data-translate="footer.sobre_texto">
                   📍Nós somos estudantes do Primeiro Ano do EM
                     do Instituto Federal Catarinense - Campus
                     Concórdia, cursamos informática para internet.
@@ -70,14 +68,14 @@
         </div>
         <img src="../Imagens/logoifcconcórdia.png" alt="Logo IFC">
         <div class="botao-info">
-            <button>Contato</button>
+            <button data-translate="footer.contato">Contato</button>
             <div class="informacao contato">
                 ☎️ 49 99999-9999<br><br>
-                ✉️ 3gruppi@gmail.com
+                ✉️ 3grupopi@gmail.com
             </div>
         </div>
-
     </footer>
 
+    <script src="../JavaScript/traducao_inform.js"></script>
 </body>
 </html>

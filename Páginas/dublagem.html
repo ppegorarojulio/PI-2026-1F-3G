@@ -8,93 +8,79 @@
 </head>
 
 <body>
-
     <header class="cabecalho">
-
         <div class="logo">
             <img src="../Imagens/img_tidle.png" alt="Logo TIDLE">
             <h2>TIDLE</h2>
+            <div class="linguagemBotoes">
+                <button class="linguagemBt active" data-lang="pt">pt-🇧🇷</button>
+                <button class="linguagemBt" data-lang="en">en-🇺🇸</button>
+            </div>
         </div>
         <nav class="menu">
-           <a href="../index.html">Início</a>
-            <a href="traducao.html">Tradução</a>
-            <a href="dublagem.html">Dublagem</a>
-            <a href="legenda.html">Legendagem</a>
-            <a href="interpretes.html">Intérpretes</a>
+            <a href="../index.html" data-translate="menu.inicio">Início</a>
+            <a href="traducao.html" data-translate="menu.traducao">Tradução</a>
+            <a href="dublagem.html" data-translate="menu.dublagem">Dublagem</a>
+            <a href="legenda.html" data-translate="menu.legenda">Legendagem</a>
+            <a href="interpretes.html" data-translate="menu.interpretes">Intérpretes</a>
         </nav>
-
     </header>
 
     <section class="inicio">
         <div class="titulo">
-            <h1>Dublagem</h1>
-            <p>A dublagem permite que filmes, séries, animações e jogos sejam compreendidos por pessoas de diferentes idiomas, mantendo a emoção e a personalidade dos personagens.</p>
-            <a href="dublagem_inform.html">Saiba Mais</a>
+            <h1 data-translate="dublagem.titulo">Dublagem</h1>
+            <p data-translate="dublagem.subtitulo">A dublagem permite que filmes, séries, animações e jogos sejam compreendidos por pessoas de diferentes idiomas, mantendo a emoção e a personalidade dos personagens.</p>
+            <a href="dublagem_inform.html" data-translate="botao.saiba_mais">Saiba Mais</a>
         </div>
-
         <div class="imagem">
             <img src="../Imagens/imagem_dublagem.png" alt="Imagem representativa de dublagem">
         </div>
-
     </section>
 
     <section class="conteudo">
-
-        <h2>Como funciona?</h2>
-
+        <h2 data-translate="dublagem.como_funciona">Como funciona?</h2>
         <div class="etapas">
-
             <div class="item">
-                <h3>Direção</h3>
-                <p>Antes da gravação, os diálogos são adaptados para manter o sentido da obra e sincronizar com os movimentos labiais dos personagens.</p>
+                <h3 data-translate="dublagem.etapa1_titulo">Direção</h3>
+                <p data-translate="dublagem.etapa1_desc">Antes da gravação, os diálogos são adaptados para manter o sentido da obra e sincronizar com os movimentos labiais dos personagens.</p>
             </div>
-
             <div class="item">
-                <h3>Gravação</h3>
-                <p>Os dubladores interpretam os personagens em estúdios especializados, transmitindo emoções e características únicas.</p>
+                <h3 data-translate="dublagem.etapa2_titulo">Gravação</h3>
+                <p data-translate="dublagem.etapa2_desc">Os dubladores interpretam os personagens em estúdios especializados, transmitindo emoções e características únicas.</p>
             </div>
-
             <div class="item">
-                <h3>Edição</h3>
-                <p>Após a gravação, o áudio é editado e sincronizado para que as falas coincidam com as cenas exibidas.</p>
+                <h3 data-translate="dublagem.etapa3_titulo">Edição</h3>
+                <p data-translate="dublagem.etapa3_desc">Após a gravação, o áudio é editado e sincronizado para que as falas coincidam com as cenas exibidas.</p>
             </div>
-
             <div class="item">
-                <h3>Mixagem</h3>
-                <p>Além dos dubladores, participam diretores, técnicos de áudio, tradutores e adaptadores de roteiro para ajudarem na mixagem do áudio.</p>
+                <h3 data-translate="dublagem.etapa4_titulo">Mixagem</h3>
+                <p data-translate="dublagem.etapa4_desc">Além dos dubladores, participam diretores, técnicos de áudio, tradutores e adaptadores de roteiro para ajudarem na mixagem do áudio.</p>
             </div>
-
-        </div>    
-
+        </div>
     </section>
 
     <section class="final">
-
         <div class="cards">
             <div class="mais-informacoes">
-                <h3>A importância da Dublagem</h3>
-                <p>A dublagem amplia o acesso ao entretenimento e à informação, permitindo que mais pessoas compreendam conteúdos produzidos em outros idiomas.</p>
+                <h3 data-translate="dublagem.info_titulo">A importância da Dublagem</h3>
+                <p data-translate="dublagem.info_desc">A dublagem amplia o acesso ao entretenimento e à informação, permitindo que mais pessoas compreendam conteúdos produzidos em outros idiomas.</p>
             </div>
-
             <div class="curiosidade">
-                <h2>CURIOSIDADE</h2>
-                <p>O Brasil é reconhecido internacionalmente pela qualidade de sua dublagem, sendo considerado uma das maiores referências mundiais nessa área.</p>
+                <h2 data-translate="dublagem.curiosidade_titulo">CURIOSIDADE</h2>
+                <p data-translate="dublagem.curiosidade_desc">O Brasil é reconhecido internacionalmente pela qualidade de sua dublagem, sendo considerado uma das maiores referências mundiais nessa área.</p>
             </div>
-
             <div class="botao">
-                <p>Acesse nossa experiência única de dublar!</p>
-                <a href="pg_interativa.html">Testar</a>
+                <p data-translate="botao.dublar">Acesse nossa experiência única de dublar!</p>
+                <a href="pg_interativa.html" data-translate="botao.testar">Testar</a>
             </div>
-        </div>    
-
+        </div>
     </section>
 
     <footer class="rodape">
-
         <div class="botao-info">
-            <button>Sobre Nós</button>
+            <button data-translate="footer.sobre">Sobre Nós</button>
             <div class="informacao">
-                <p>
+                <p data-translate="footer.sobre_texto">
                     📍Nós somos estudantes do Primeiro Ano do EM
                     do Instituto Federal Catarinense - Campus
                     Concórdia, cursamos informática para internet.
@@ -105,14 +91,13 @@
         </div>
         <img src="../Imagens/logoifcconcórdia.png" alt="Logo IFC">
         <div class="botao-info">
-            <button>Contato</button>
-            <div class="informacao contato">
-                ✉️ 3gruppi@gmail.com
+            <button data-translate="footer.contato">Contato</button>
+            <div class="informacao contato" data-translate="footer.contato_texto">
+                ✉️ 3grupopi@gmail.com
             </div>
         </div>
-
     </footer>
 
+    <script src="../JavaScript/traducao.js"></script>
 </body>
- 
 </html>

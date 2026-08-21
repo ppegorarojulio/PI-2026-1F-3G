@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,73 +8,63 @@
 </head>
 
 <body>
-
-    
     <header class="cabecalho">
         <div class="logo">
             <img src="../Imagens/img_tidle.png" alt="Logo TIDLE">
             <h2>TIDLE</h2>
+            <div class="linguagemBotoes">
+                <button class="linguagemBt active" data-lang="pt">pt-🇧🇷</button>
+                <button class="linguagemBt" data-lang="en">en-🇺🇸</button>
+            </div>
         </div>
-       
         <nav class="menu">
-            <a href="../index.html">Início</a>
-            <a href="traducao.html">Tradução</a>
-            <a href="dublagem.html">Dublagem</a>
-            <a href="legenda.html">Legendagem</a>
-            <a href="interpretes.html">Intérpretes</a>
+            <a href="../index.html" data-translate="menu.inicio">Início</a>
+            <a href="traducao.html" data-translate="menu.traducao">Tradução</a>
+            <a href="dublagem.html" data-translate="menu.dublagem">Dublagem</a>
+            <a href="legenda.html" data-translate="menu.legenda">Legendagem</a>
+            <a href="interpretes.html" data-translate="menu.interpretes">Intérpretes</a>
         </nav>
-      </header>
-
+    </header>
 
     <div class="inicio">
-
         <div class="imagem">
             <img src="" alt="">
         </div>
-
         <div class="texto">
-            <p>Os intérpretes são profissionais responsáveis por facilitar a comunicação entre pessoas que falam línguas diferentes. Seu trabalho não consiste apenas em traduzir palavras, mas também em compreender o contexto, a intenção e o sentido do que está sendo transmitido. Por isso, a interpretação exige atenção, conhecimento das línguas e capacidade de tomar decisões rapidamente.</p>
+            <p data-translate="interpretes_inform.paragrafo1">Os intérpretes são profissionais responsáveis por facilitar a comunicação entre pessoas que falam línguas diferentes. Seu trabalho não consiste apenas em traduzir palavras, mas também em compreender o contexto, a intenção e o sentido do que está sendo transmitido. Por isso, a interpretação exige atenção, conhecimento das línguas e capacidade de tomar decisões rapidamente.</p>
         </div>
-
     </div>
 
     <div class="secao_principal">
-
         <div class="texto1">
-            <p>A interpretação é uma atividade complexa e imprevisível, pois cada situação pode apresentar diferentes desafios. O intérprete precisa adaptar sua forma de atuação de acordo com o contexto e com as pessoas envolvidas na comunicação. Um exemplo disso são os intérpretes de Libras e Língua Portuguesa, que possibilitam a comunicação entre pessoas surdas e ouvintes.</p>
+            <p data-translate="interpretes_inform.paragrafo2">A interpretação é uma atividade complexa e imprevisível, pois cada situação pode apresentar diferentes desafios. O intérprete precisa adaptar sua forma de atuação de acordo com o contexto e com as pessoas envolvidas na comunicação. Um exemplo disso são os intérpretes de Libras e Língua Portuguesa, que possibilitam a comunicação entre pessoas surdas e ouvintes.</p>
         </div>
-
         <div class="imagem1">
             <img src="" alt="">
         </div>
-
         <div class="imagem2">
             <img src="" alt="">
         </div>
-
         <div class="texto2">
-            <p>A formação e a experiência também são importantes para o trabalho desses profissionais. Quanto mais preparados, os intérpretes conseguem desenvolver estratégias para lidar com diferentes tipos de discursos e situações. Dessa forma, o intérprete tem um papel fundamental na comunicação, ajudando a transmitir informações de maneira clara e adequada, especialmente em situações que envolvem diferentes línguas e culturas.</p>
+            <p data-translate="interpretes_inform.paragrafo3">A formação e a experiência também são importantes para o trabalho desses profissionais. Quanto mais preparados, os intérpretes conseguem desenvolver estratégias para lidar com diferentes tipos de discursos e situações. Dessa forma, o intérprete tem um papel fundamental na comunicação, ajudando a transmitir informações de maneira clara e adequada, especialmente em situações que envolvem diferentes línguas e culturas.</p>
         </div>
-
     </div>
 
     <div class="final">
-
         <div class="caixa">
-            <h4>Fontes</h4>
+            <h4 data-translate="fontes.titulo">Fontes</h4>
             <a href="https://repositorio.pucsp.br/bitstream/handle/19562/2/Marcus%20Vin%c3%adcius%20Batista%20Nascimento.pdf">https://repositorio.pucsp.br/bitstream/handle/19562/2/Marcus%20Vin%c3%adcius%20Batista%20Nascimento.pdf</a> <br>
             <a href="https://www.overleaf.com/read/dwhhyxmqqcsg#0aac4d">
-            <strong>Nosso artigo: </strong>https://www.overleaf.com/read/dwhhyxmqqcsg#0aac4d
+            <strong data-translate="fontes.artigo">Nosso artigo:</strong> https://www.overleaf.com/read/dwhhyxmqqcsg#0aac4d
             </a>
         </div>
-
     </div>
     
     <footer class="rodape">
         <div class="botao-info">
-            <button>Sobre Nós</button>
+            <button data-translate="footer.sobre">Sobre Nós</button>
             <div class="informacao">
-                <p>
+                <p data-translate="footer.sobre_texto">
                   📍Nós somos estudantes do Primeiro Ano do EM
                     do Instituto Federal Catarinense - Campus
                     Concórdia, cursamos informática para internet.
@@ -86,14 +75,13 @@
         </div>
         <img src="../Imagens/logoifcconcórdia.png" alt="Logo IFC">
         <div class="botao-info">
-            <button>Contato</button>
-            <div class="informacao contato">
-                ✉️ 3gruppi@gmail.com
+            <button data-translate="footer.contato">Contato</button>
+            <div class="informacao contato" data-translate="footer.contato_texto">
+                ✉️ 3grupopi@gmail.com
             </div>
         </div>
-
     </footer>
-        
+    
+    <script src="../JavaScript/traducao_inform.js"></script>
 </body>
-
 </html>
