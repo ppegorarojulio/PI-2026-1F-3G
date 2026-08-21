@@ -166,8 +166,10 @@ body {
 */
 
 .carrossel {
-    position: absolute;
-    right: 500px;
+    position: relative;
+    flex: 0 1 600px;
+    min-width: 0;
+    margin-left: 0;
 }
 
 .carrossel__card {
@@ -190,10 +192,11 @@ body {
 }
 
 .carrossel__nav {
-    width: 100%;
+    width: 600px;
+    max-width: 100%;
     padding: 20px 0px;
-    position: absolute;
-    left: 0px;
+    position: relative;
+    left: 0;
     text-align: center;
 }
 
@@ -219,7 +222,7 @@ body {
 .abordagem {
     display: flex;
     align-items: flex-start;
-    gap: 80px;
+    gap: 150px;
     min-height: 600px;
     position: relative;
     width: 100%;
@@ -227,6 +230,7 @@ body {
     padding: 150px;
     overflow: hidden;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .abordagem::after {
@@ -485,8 +489,31 @@ body {
         max-width: 380px;
     }
     .abordagem {
-        padding: 100px 40px;
+        padding: 120px 80px;
         gap: 50px;
+    }
+    .abordagem .descricao {
+        max-width: 500px;
+    }
+
+    .abordagem .descricao h2 {
+        font-size: 45px;
+    }
+
+    .abordagem .descricao p {
+        font-size: 25px;
+    }
+    .carrossel {
+        flex: 1 1 500px;
+    }
+    .carrossel__card {
+        width: 500px;
+        max-width: 100%;
+        font-size: 35px;
+    }
+    .carrossel__nav {
+        width: 500px;
+        max-width: 100%;
     }
     .rodape {
         gap: 150px;
@@ -543,17 +570,31 @@ body {
         max-width: 320px;
     }
     .abordagem {
-        flex-direction: column;
-        align-items: center;
-        padding: 80px 20px;
+        padding: 100px 50px;
         gap: 40px;
     }
     .abordagem .descricao {
-        text-align: center;
-        max-width: 100%;
+        flex: 1 1 400px;
+        max-width: 450px;
     }
     .abordagem .descricao h2 {
-        font-size: 38px;
+        font-size: 40px;
+    }
+    .abordagem .descricao p {
+        font-size: 22px;
+    }
+    .carrossel {
+        flex: 1 1 450px;
+    }
+    .carrossel__card {
+        width: 450px;
+        max-width: 100%;
+        height: 450px;
+        font-size: 32px;
+    }
+    .carrossel__nav {
+        width: 450px;
+        max-width: 100%;
     }
     .cards {
         grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -618,11 +659,40 @@ body {
     .imagem img {
         max-width: 260px;
     }
+    .abordagem {
+        padding: 80px 30px;
+        gap: 50px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .abordagem .descricao {
+        width: 100%;
+        max-width: 100%;
+        flex: none;
+    }
     .abordagem .descricao h2 {
-        font-size: 32px;
+        font-size: 36px;
     }
     .abordagem .descricao p {
         font-size: 20px;
+    }
+    .carrossel {
+        width: 100%;
+        margin-left: 0;
+        flex: none;
+    }
+    .carrossel__card {
+        width: 100%;
+        max-width: 600px;
+        height: 400px;
+        margin: 0 auto;
+        padding: 70px 25px 25px;
+        font-size: 28px;
+    }
+    .carrossel__nav {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
     }
     .cards {
         grid-template-columns: 1fr;
@@ -713,11 +783,36 @@ body {
     .imagem img {
         max-width: 200px;
     }
+    .abordagem {
+        padding: 60px 20px;
+        gap: 35px;
+    }
     .abordagem .descricao h2 {
-        font-size: 26px;
+        font-size: 30px;
     }
     .abordagem .descricao p {
-        font-size: 17px;
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    .carrossel {
+        width: 100%;
+        padding-left: 0;
+    }
+    .carrossel__card {
+        width: 100%;
+        height: 350px;
+        padding: 60px 20px 20px;
+        font-size: 23px;
+        border-radius: 35px;
+    }
+    .carrossel__nav {
+        width: 100%;
+        padding: 15px 0;
+    }
+    .carrossel__botao {
+        width: 40px;
+        height: 5px;
+        margin: 0 3px;
     }
     .card h3 {
         font-size: 22px;

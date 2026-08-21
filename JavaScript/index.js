@@ -48,3 +48,10 @@ document.querySelectorAll(".carrossel").forEach((carrossel) => {
   botoes[0].classList.add("carrossel__botao-presente");
 
 });
+
+
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'pt-BR', layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+  }, 'google_translate_element');
+}
