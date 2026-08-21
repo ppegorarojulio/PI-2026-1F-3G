@@ -339,3 +339,640 @@ body{
     opacity: 1;
     visibility: visible;
 }
+
+@media (max-width: 1200px) {
+    .logo {
+        margin-left: 20px;
+    }
+    .logo h2 {
+        font-size: 48px;
+    }
+
+    .menu {
+        gap: 25px;
+        margin-right: 20px;
+    }
+    .menu a,
+    .menu button {
+        font-size: 17px;
+        padding: 7px 22px;
+    }
+    .linguagemBt {
+        margin-left: 30px;
+        min-width: 90px;
+    }
+    .texto {
+        width: 85%;
+    }
+    .secao_principal {
+        padding: 50px 50px;
+    }
+    .texto1,
+    .texto2 {
+        width: 85%;
+    }
+    .caixa {
+        width: 80%;
+    }
+
+    .rodape {
+        gap: 150px;
+    }
+}
+@media (max-width: 992px) {
+    .cabecalho {
+        height: auto;
+        min-height: 115px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .logo {
+        margin-left: 0;
+    }
+
+    .logo h2 {
+        font-size: 45px;
+    }
+
+    .menu {
+        margin-right: 0;
+        gap: 15px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .menu a,
+    .menu button {
+        font-size: 15px;
+        padding: 6px 18px;
+    }
+
+    .linguagemBotoes {
+        margin-left: 0;
+    }
+
+    .linguagemBt {
+        margin-left: 0;
+        min-width: 90px;
+        width: auto;
+    }
+
+    .inicio {
+        height: auto;
+        min-height: 400px;
+        padding: 40px 20px;
+    }
+
+    .texto {
+        width: 90%;
+        margin-top: 100px;
+    }
+
+    .secao_principal {
+        height: auto;
+        min-height: 600px;
+        padding: 40px 30px;
+    }
+    .texto1,
+    .texto2 {
+        width: 90%;
+    }
+
+    .final {
+        height: auto;
+        min-height: 300px;
+        padding: 50px 20px;
+    }
+
+    .caixa {
+        width: 85%;
+    }
+
+    .rodape {
+        gap: 80px;
+        height: 220px;
+        padding-top: 45px;
+    }
+
+    .rodape button {
+        width: 210px;
+        height: 65px;
+        font-size: 22px;
+    }
+
+    .rodape img {
+        width: 150px;
+        top: 45px;
+    }
+    .informacao {
+        width: 300px;
+    }
+}
+@media (max-width: 768px) {
+    .cabecalho {
+        padding: 18px 15px;
+    }
+
+    .logo {
+        gap: 8px;
+    }
+
+    .logo img {
+        width: 38px;
+    }
+
+    .logo h2 {
+        font-size: 38px;
+    }
+
+    .menu {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .menu a,
+    .menu button {
+        font-size: 13px;
+        padding: 6px 14px;
+    }
+
+    .linguagemBotoes {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .linguagemBt {
+        font-size: 12px;
+        min-width: 80px;
+        padding: 9px 10px;
+    }
+
+    .inicio {
+        min-height: 380px;
+        padding: 30px 15px;
+    }
+
+    .texto {
+        width: 92%;
+        padding: 20px;
+        margin-top: 90px;
+    }
+
+    .texto p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .secao_principal {
+        padding: 40px 20px;
+        gap: 5px;
+    }
+
+    .texto1,
+    .texto2 {
+        width: 95%;
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    .texto1 p,
+    .texto2 p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .final {
+        min-height: 280px;
+        padding: 40px 15px;
+    }
+
+    .caixa {
+        width: 92%;
+        padding: 20px 25px;
+    }
+
+    .caixa h4 {
+        font-size: 20px;
+    }
+
+    .caixa a {
+        font-size: 15px;
+    }
+
+    .rodape {
+        height: auto;
+        min-height: 280px;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        padding: 35px 15px 20px;
+    }
+
+    .rodape::before {
+        height: 180px;
+        clip-path: polygon(
+            0 20%,
+            10% 20%,
+            20% 5%,
+            80% 5%,
+            90% 20%,
+            100% 20%,
+            100% 100%,
+            0 100%
+        );
+    }
+
+    .rodape button {
+        width: 200px;
+        height: 60px;
+        font-size: 20px;
+    }
+
+    .rodape img {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        width: 130px;
+        margin: 10px auto;
+    }
+    .informacao {
+        width: 280px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cabecalho {
+        padding: 15px 10px;
+        gap: 15px;
+    }
+    .logo img {
+        width: 32px;
+    }
+    .logo h2 {
+        font-size: 32px;
+    }
+    .menu {
+        gap: 7px;
+    }
+    .menu a,
+    .menu button {
+        font-size: 11px;
+        padding: 5px 11px;
+    }
+    .linguagemBt {
+        font-size: 11px;
+        padding: 8px 9px;
+        min-width: 75px;
+    }
+    .inicio {
+        min-height: 360px;
+        padding: 20px 10px;
+    }
+    .inicio::before {
+        height: 22px;
+    }
+    .inicio::after {
+        height: 30px;
+    }
+    .texto {
+        width: 94%;
+        padding: 18px;
+        margin-top: 75px;
+        border-radius: 12px;
+    }
+    .texto p {
+        font-size: 15px;
+        line-height: 1.45;
+    }
+    .secao_principal {
+        min-height: 600px;
+        padding: 30px 10px;
+    }
+    .texto1,
+    .texto2 {
+        width: 96%;
+        padding: 18px;
+        margin: 15px auto;
+        border-radius: 12px;
+    }
+    .texto1 p,
+    .texto2 p {
+        font-size: 15px;
+        line-height: 1.45;
+    }
+    .final {
+        min-height: 250px;
+        padding: 30px 10px;
+    }
+    .caixa {
+        width: 95%;
+        padding: 18px 15px;
+        border-radius: 12px;
+    }
+    .caixa h4 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .caixa a {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    .rodape {
+        min-height: 260px;
+        padding: 30px 10px 15px;
+        gap: 20px;
+    }
+    .rodape::before {
+        height: 160px;
+    }
+    .rodape button {
+        width: 180px;
+        height: 55px;
+        font-size: 18px;
+    }
+    .rodape img {
+        width: 115px;
+    }
+    .informacao {
+        width: 230px;
+        font-size: 13px;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 414px) {
+    .logo img {
+        width: 29px;
+    }
+    .logo h2 {
+        font-size: 29px;
+    }
+    .menu {
+        gap: 5px;
+    }
+    .menu a,
+    .menu button {
+        font-size: 10px;
+        padding: 5px 9px;
+    }
+    .linguagemBt {
+        font-size: 10px;
+        min-width: 70px;
+        padding: 7px 8px;
+    }
+    .inicio {
+        min-height: 350px;
+    }
+    .texto {
+        width: 95%;
+        padding: 16px;
+        margin-top: 70px;
+    }
+    .texto p {
+        font-size: 14px;
+    }
+    .secao_principal {
+        padding: 25px 8px;
+    }
+    .texto1,
+    .texto2 {
+        width: 97%;
+        padding: 16px;
+    }
+    .texto1 p,
+    .texto2 p {
+        font-size: 14px;
+    }
+    .caixa {
+        width: 96%;
+    }
+    .rodape button {
+        width: 170px;
+        height: 52px;
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 393px) {
+    .logo h2 {
+        font-size: 27px;
+    }
+    .logo img {
+        width: 27px;
+    }
+    .menu {
+        gap: 4px;
+    }
+    .menu a,
+    .menu button {
+        font-size: 9px;
+        padding: 4px 8px;
+    }
+    .linguagemBt {
+        font-size: 9px;
+        min-width: 65px;
+    }
+    .texto {
+        padding: 15px;
+    }
+    .texto p {
+        font-size: 13px;
+    }
+    .texto1,
+    .texto2 {
+        padding: 15px;
+    }
+    .texto1 p,
+    .texto2 p {
+        font-size: 13px;
+    }
+    .caixa {
+        padding: 16px 12px;
+    }
+    .caixa h4 {
+        font-size: 17px;
+    }
+    .caixa a {
+        font-size: 13px;
+    }
+    .rodape button {
+        width: 160px;
+        font-size: 16px;
+    }
+    .rodape img {
+        width: 105px;
+    }
+}
+
+@media (max-width: 375px) {
+    .cabecalho {
+        padding: 12px 7px;
+    }
+    .logo h2 {
+        font-size: 25px;
+    }
+    .logo img {
+        width: 25px;
+    }
+    .menu {
+        gap: 3px;
+    }
+    .menu a,
+    .menu button {
+        font-size: 8px;
+        padding: 4px 7px;
+    }
+    .linguagemBt {
+        font-size: 8px;
+        min-width: 60px;
+        padding: 6px 7px;
+    }
+    .inicio {
+        min-height: 330px;
+    }
+    .inicio::before {
+        height: 20px;
+    }
+    .inicio::after {
+        height: 27px;
+    }
+    .texto {
+        width: 96%;
+        padding: 14px;
+        margin-top: 65px;
+    }
+    .texto p {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+    .secao_principal {
+        padding: 22px 6px;
+    }
+    .texto1,
+    .texto2 {
+        width: 98%;
+        padding: 14px;
+        margin: 12px auto;
+    }
+    .texto1 p,
+    .texto2 p {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+    .final {
+        min-height: 230px;
+    }
+    .caixa {
+        width: 97%;
+        padding: 14px 10px;
+    }
+    .caixa h4 {
+        font-size: 16px;
+    }
+    .caixa a {
+        font-size: 12px;
+    }
+    .rodape button {
+        width: 150px;
+        height: 48px;
+        font-size: 15px;
+    }
+    .rodape img {
+        width: 95px;
+    }
+}
+@media (max-width: 360px) {
+    .cabecalho {
+        padding: 10px 5px;
+    }
+    .logo {
+        gap: 5px;
+    }
+    .logo img {
+        width: 23px;
+    }
+    .logo h2 {
+        font-size: 23px;
+    }
+    .menu {
+        gap: 2px;
+    }
+    .menu a,
+    .menu button {
+        font-size: 7px;
+        padding: 4px 6px;
+    }
+    .linguagemBt {
+        font-size: 7px;
+        min-width: 55px;
+        padding: 6px;
+    }
+    .inicio {
+        min-height: 320px;
+        padding: 15px 5px;
+    }
+    .inicio::before {
+        height: 18px;
+    }
+    .inicio::after {
+        height: 25px;
+    }
+    .texto {
+        width: 97%;
+        padding: 13px;
+        margin-top: 60px;
+    }
+    .texto p {
+        font-size: 11px;
+        line-height: 1.35;
+    }
+    .secao_principal {
+        padding: 20px 5px;
+    }
+    .texto1,
+    .texto2 {
+        width: 98%;
+        padding: 13px;
+        margin: 10px auto;
+    }
+    .texto1 p,
+    .texto2 p {
+        font-size: 11px;
+        line-height: 1.35;
+    }
+    .final {
+        min-height: 220px;
+        padding: 25px 5px;
+    }
+    .caixa {
+        width: 98%;
+        padding: 13px 8px;
+    }
+    .caixa h4 {
+        font-size: 15px;
+    }
+    .caixa a {
+        font-size: 11px;
+    }
+    .rodape {
+        min-height: 240px;
+        padding-top: 25px;
+    }
+    .rodape button {
+        width: 140px;
+        height: 45px;
+        font-size: 14px;
+    }
+    .rodape img {
+        width: 85px;
+    }
+    .informacao {
+        width: 210px;
+        font-size: 12px;
+    }
+}
