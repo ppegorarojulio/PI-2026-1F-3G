@@ -1,0 +1,1547 @@
+@media (max-width: 1400px) {
+    .abordagem {
+        padding: 120px 80px;
+        gap: 80px;
+    }
+    .carrossel {
+        flex: 0 1 550px;
+    }
+    .carrossel__card {
+        width: 500px;
+        height: 450px;
+        font-size: 35px;
+    }
+    .carrossel__nav {
+        width: 500px;
+    }
+}
+
+@media (max-width: 1220px) {
+    .texto h1 {
+        font-size: 60px;
+    }
+    .texto h2 {
+        font-size: 58px;
+    }
+    .texto p {
+        font-size: 22px;
+        max-width: 100%;
+    }
+    .imagem img {
+        max-width: 380px;
+    }
+    .abordagem {
+        padding: 100px 60px;
+        gap: 50px;
+    }
+    .abordagem .descricao {
+        max-width: 450px;
+    }
+    .abordagem .descricao h2 {
+        font-size: 42px;
+    }
+    .abordagem .descricao p {
+        font-size: 24px;
+    }
+    .carrossel {
+        flex: 1 1 450px;
+    }
+    .carrossel__card {
+        width: 450px;
+        height: 420px;
+        font-size: 32px;
+        padding-top: 80px;
+    }
+    .carrossel__nav {
+        width: 450px;
+    }
+    .cards {
+        gap: 50px;
+    }
+    .conteudo a {
+        transform: translateX(-200px);
+    }
+    .conteudo a:hover {
+        transform: translateX(-200px) scale(1.03);
+    }
+    .rodape {
+        gap: 150px;
+        padding: 50px 20px 30px;
+    }
+    .rodape img {
+        width: 180px;
+        top: 50px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .logo {
+        margin-left: 20px;
+    }
+    .logo h2 {
+        font-size: 48px;
+    }
+    .menu {
+        gap: 25px;
+        margin-right: 20px;
+    }
+    .menu a,
+    .menu button {
+        font-size: 17px;
+        padding: 7px 22px;
+    }
+    .linguagemBt {
+        margin-left: 30px;
+        min-width: 90px;
+    }
+    .texto {
+        width: 85%;
+    }
+    .secao_principal {
+        padding: 50px 50px;
+    }
+    .texto1,
+    .texto2 {
+        width: 85%;
+    }
+    .caixa {
+        width: 80%;
+    }
+    .titulo h1 {
+        font-size: 60px;
+    }
+    .titulo p {
+        font-size: 22px;
+    }
+    .imagem img {
+        max-width: 380px;
+    }
+    .rodape {
+        gap: 150px;
+    }
+}
+
+@media (max-width: 992px) {
+    .cabecalho {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap: 15px;
+        min-height: 115px;
+        height: auto;
+        justify-content: center;
+    }
+    .logo {
+        margin-left: 0;
+        justify-content: center;
+        width: 100%;
+    }
+    .logo h2 {
+        font-size: 45px;
+    }
+    .menu {
+        margin-right: 0;
+        gap: 15px;
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .menu a,
+    .menu button {
+        font-size: 15px;
+        padding: 6px 18px;
+    }
+    .linguagemBotoes {
+        margin-left: 0;
+        justify-content: center;
+        width: 100%;
+    }
+    .linguagemBt {
+        margin-left: 0;
+        min-width: 90px;
+        width: auto;
+    }
+    .inicio {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+        min-height: auto;
+        height: auto;
+    }
+    .texto,
+    .titulo {
+        text-align: center;
+        padding: 20px 0;
+        width: 90%;
+    }
+    .texto h1,
+    .titulo h1 {
+        font-size: 48px;
+        transform: scaleY(0.6);
+    }
+    .texto h2,
+    .titulo h2 {
+        font-size: 46px;
+        transform: scaleY(0.6);
+        letter-spacing: 4px;
+    }
+    .texto p,
+    .titulo p {
+        font-size: 20px;
+        max-width: 100%;
+        margin: 10px auto;
+    }
+    .texto a,
+    .texto button,
+    .titulo a,
+    .titulo button {
+        margin: 0 auto;
+    }
+    .imagem {
+        margin-top: 20px;
+        min-width: 200px;
+    }
+    .imagem img {
+        max-width: 320px;
+    }
+    .secao_principal {
+        padding: 40px 30px;
+        min-height: 600px;
+        height: auto;
+    }
+    .texto1,
+    .texto2 {
+        width: 90%;
+    }
+    .final {
+        padding: 40px 30px 60px 30px;
+        min-height: 300px;
+        height: auto;
+    }
+    .caixa {
+        width: 85%;
+    }
+    .conteudo {
+        padding: 60px 30px 40px 30px;
+    }
+    .conteudo h2 {
+        font-size: 38px;
+    }
+    .etapas {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        min-width: 0;
+    }
+    .cards h2 {
+        margin-left: 0;
+        text-align: center;
+        font-size: 28px;
+    }
+    .card {
+        padding: 30px 25px;
+    }
+    .card h3 {
+        font-size: 22px;
+    }
+    .card p {
+        font-size: 16px;
+    }
+    .abordagem {
+        padding: 80px 40px;
+        gap: 40px;
+        flex-direction: column;
+        align-items: center;
+        min-height: 500px;
+    }
+    .abordagem .descricao {
+        flex: none;
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+    }
+    .abordagem .descricao h2 {
+        font-size: 38px;
+    }
+    .abordagem .descricao p {
+        font-size: 22px;
+        max-width: 100%;
+    }
+    .abordagem::after {
+        transform: translateX(-30%);
+        height: 35px;
+    }
+    .carrossel {
+        width: 100%;
+        flex: none;
+        margin: 20px 0;
+    }
+    .carrossel__card {
+        width: 100%;
+        max-width: 500px;
+        height: 400px;
+        margin: 0 auto;
+        font-size: 28px;
+        padding-top: 70px;
+        padding-left: 30px;
+    }
+    .carrossel__nav {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .teste {
+        padding: 50px 20px;
+        min-height: 600px;
+    }
+    .teste h2 {
+        font-size: 36px;
+        margin-bottom: 60px;
+    }
+    .teste::before {
+        left: 40px;
+        right: 40px;
+        top: 30px;
+        bottom: 40px;
+    }
+    .caixa-texto {
+        width: 85%;
+        padding: 30px;
+        transform: translateY(-50px);
+    }
+    .caixa-texto p {
+        font-size: 20px;
+    }
+    .conteudo a {
+        width: 250px;
+        height: 70px;
+        font-size: 28px;
+        transform: translateX(0);
+        padding-top: 12px;
+    }
+    .conteudo a:hover {
+        transform: translateX(0) scale(1.03);
+    }
+
+
+    .rodape {
+        gap: 80px;
+        padding: 40px 20px;
+        min-height: 250px;
+        height: 220px;
+        padding-top: 45px;
+    }
+    .rodape img {
+        width: 150px;
+        top: 45px;
+        position: relative;
+    }
+    .rodape button {
+        width: 210px;
+        height: 65px;
+        font-size: 22px;
+    }
+    .rodape::before {
+        height: 200px;
+        clip-path: polygon(
+            0 25%,
+            10% 25%,
+            20% 8%,
+            80% 8%,
+            90% 25%,
+            100% 25%,
+            100% 100%,
+            0 100%
+        );
+    }
+    .informacao {
+        width: 300px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .cabecalho {
+        padding: 18px 15px;
+    }
+    .logo {
+        gap: 8px;
+    }
+    .logo img {
+        width: 35px;
+    }
+    .logo h2 {
+        font-size: 38px;
+    }
+    .menu {
+        width: 100%;
+        gap: 10px;
+    }
+    .menu a,
+    .menu button {
+        font-size: 13px;
+        padding: 6px 14px;
+    }
+    .linguagemBotoes {
+        width: 100%;
+        justify-content: center;
+    }
+    .linguagemBt {
+        font-size: 12px;
+        min-width: 80px;
+        padding: 9px 10px;
+    }
+
+    .inicio {
+        min-height: 380px;
+        padding: 30px 15px;
+    }
+    .texto {
+        width: 92%;
+        padding: 20px;
+    }
+    .texto p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    .titulo h1 {
+        font-size: 36px;
+        transform: scaleY(0.7);
+    }
+    .titulo p {
+        font-size: 18px;
+    }
+    .titulo button {
+        padding: 12px 35px;
+        font-size: 20px;
+    }
+    .imagem img {
+        max-width: 260px;
+    }
+
+    .secao_principal {
+        padding: 40px 20px;
+        gap: 5px;
+    }
+    .texto1,
+    .texto2 {
+        width: 95%;
+        padding: 20px;
+        margin: 20px auto;
+    }
+    .texto1 p,
+    .texto2 p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .conteudo {
+        padding: 40px 20px 30px 20px;
+    }
+    .conteudo h2 {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+    .etapas {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .item {
+        padding: 20px;
+    }
+    .item h3 {
+        font-size: 24px;
+    }
+    .item p {
+        font-size: 16px;
+    }
+
+    .final {
+        padding: 30px 20px 50px 20px;
+        min-height: 280px;
+    }
+    .caixa {
+        width: 92%;
+        padding: 20px 25px;
+    }
+    .caixa h4 {
+        font-size: 20px;
+    }
+    .caixa a {
+        font-size: 15px;
+    }
+
+    .mais-informacoes h3 {
+        font-size: 24px;
+    }
+    .curiosidade h2 {
+        font-size: 26px;
+    }
+    .botao p {
+        font-size: 18px;
+    }
+    .botao button {
+        padding: 12px 30px;
+        font-size: 18px;
+    }
+
+    .rodape {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        padding: 35px 15px 20px;
+        min-height: 280px;
+        height: auto;
+    }
+    .rodape img {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        width: 130px;
+        margin: 10px auto;
+    }
+    .rodape button {
+        width: 200px;
+        height: 60px;
+        font-size: 20px;
+    }
+    .rodape::before {
+        height: 180px;
+        clip-path: polygon(
+            0 20%,
+            10% 20%,
+            20% 5%,
+            80% 5%,
+            90% 20%,
+            100% 20%,
+            100% 100%,
+            0 100%
+        );
+    }
+    .informacao {
+        width: 280px;
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .cabecalho {
+        padding: 15px 10px;
+        gap: 12px;
+        min-height: auto;
+    }
+    .logo {
+        margin-left: 0;
+        gap: 8px;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .logo img {
+        width: 30px;
+    }
+    .logo h2 {
+        font-size: 32px;
+        transform: scaleY(0.8);
+    }
+    .menu {
+        margin-right: 0;
+        gap: 7px;
+        justify-content: center;
+        width: 100%;
+    }
+    .menu a,
+    .menu button {
+        font-size: 11px;
+        padding: 5px 11px;
+        border-width: 1.5px;
+        border-radius: 999px;
+    }
+    .linguagemBotoes {
+        margin-left: 0;
+        justify-content: center;
+        width: 100%;
+        gap: 4px;
+        flex-wrap: wrap;
+    }
+    .linguagemBt {
+        margin-left: 0;
+        min-width: 75px;
+        padding: 8px 9px;
+        font-size: 11px;
+        border-radius: 8px;
+    }
+
+    .inicio {
+        padding: 25px 15px 30px;
+        min-height: 360px;
+    }
+    .inicio::before {
+        height: 20px;
+    }
+    .inicio::after {
+        height: 28px;
+    }
+    .texto {
+        width: 94%;
+        padding: 18px;
+        border-radius: 12px;
+    }
+    .texto h1 {
+        font-size: 28px;
+        transform: scaleY(0.8);
+        margin-bottom: 5px;
+    }
+    .texto h2 {
+        font-size: 26px;
+        transform: scaleY(0.8);
+        letter-spacing: 2px;
+        margin-bottom: 5px;
+    }
+    .texto p {
+        font-size: 15px;
+        line-height: 1.45;
+    }
+    .titulo h1 {
+        font-size: 28px;
+        transform: scaleY(0.8);
+    }
+    .titulo p {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+    .titulo button {
+        padding: 10px 25px;
+        font-size: 16px;
+    }
+    .imagem img {
+        max-width: 200px;
+    }
+
+    .secao_principal {
+        padding: 30px 10px;
+        min-height: 600px;
+    }
+    .texto1,
+    .texto2 {
+        width: 96%;
+        padding: 18px;
+        margin: 15px auto;
+        border-radius: 12px;
+    }
+    .texto1 p,
+    .texto2 p {
+        font-size: 15px;
+        line-height: 1.45;
+    }
+
+    .conteudo {
+        padding: 30px 15px 25px;
+        min-height: auto;
+    }
+    .conteudo h2 {
+        font-size: 24px;
+        margin-bottom: 25px;
+        letter-spacing: -0.5px;
+    }
+    .etapas {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .item {
+        padding: 16px 18px;
+        border-left-width: 5px;
+        border-radius: 14px;
+    }
+    .item h3 {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+    .item p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .final {
+        padding: 25px 15px 35px;
+        min-height: 250px;
+    }
+    .final::before {
+        height: 25px;
+        top: -1px;
+        left: 0;
+        clip-path: polygon(0 100%, 0 0, 50% 0, 60% 100%, 100% 100%);
+    }
+    .caixa {
+        width: 95%;
+        padding: 18px 15px;
+        border-radius: 12px;
+    }
+    .caixa h4 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .caixa a {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin-bottom: 40px;
+    }
+    .cards h2 {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+    .card {
+        padding: 20px 15px;
+        border-left-width: 5px;
+    }
+    .card h3 {
+        font-size: 18px;
+    }
+    .card p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .mais-informacoes {
+        padding: 18px 16px;
+        border-radius: 14px;
+    }
+    .mais-informacoes h3 {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+    .mais-informacoes p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    .curiosidade {
+        padding: 18px 16px;
+        border-radius: 14px;
+    }
+    .curiosidade h2 {
+        font-size: 20px;
+        letter-spacing: 1px;
+        margin-bottom: 8px;
+    }
+    .curiosidade p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    .botao {
+        padding: 18px 16px;
+        border-radius: 14px;
+        gap: 12px;
+    }
+    .botao p {
+        font-size: 15px;
+        line-height: 1.4;
+    }
+    .botao a {
+        font-size: 15px;
+        padding: 6px 22px;
+        border-width: 1.5px;
+    }
+
+    .teste {
+        padding: 30px 12px;
+        min-height: 400px;
+    }
+    .teste h2 {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+    .teste::before {
+        left: 15px;
+        right: 15px;
+        top: 15px;
+        bottom: 25px;
+        border-width: 2px;
+        border-radius: 15px;
+    }
+    .caixa-texto {
+        width: 95%;
+        padding: 18px 15px;
+        transform: translateY(-20px);
+        border-radius: 20px;
+    }
+    .caixa-texto p {
+        font-size: 15px;
+        line-height: 1.4;
+    }
+    .conteudo a {
+        width: 170px;
+        height: 50px;
+        font-size: 20px;
+        padding-top: 8px;
+    }
+
+    .abordagem {
+        padding: 50px 15px;
+        gap: 25px;
+        min-height: 350px;
+    }
+    .abordagem .descricao h2 {
+        font-size: 28px;
+    }
+    .descricao span {
+        font-size: 24px;
+    }
+    .abordagem .descricao p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    .abordagem::after {
+        transform: translateX(-20%);
+        height: 25px;
+    }
+    .carrossel__card {
+        height: 300px;
+        font-size: 20px;
+        padding-top: 50px;
+        padding-left: 20px;
+        border-radius: 30px;
+        margin-top: -50px;
+    }
+    .carrossel__nav {
+        padding: 12px 0;
+    }
+    .carrossel__botao {
+        width: 35px;
+        height: 4px;
+        margin: 0 3px;
+    }
+
+
+    .rodape {
+        padding: 20px 12px 15px;
+        gap: 18px;
+        min-height: 220px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .rodape::before {
+        height: 120px;
+        clip-path: polygon(
+            0 15%,
+            12% 15%,
+            22% 4%,
+            78% 4%,
+            88% 15%,
+            100% 15%,
+            100% 100%,
+            0 100%
+        );
+    }
+    .rodape button {
+        width: 160px;
+        height: 50px;
+        font-size: 17px;
+        border-width: 2px;
+        border-radius: 40px;
+    }
+    .rodape img {
+        width: 100px;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        margin: 5px auto;
+    }
+    .botao-info {
+        font-size: 13px;
+    }
+    .informacao {
+        width: 200px;
+        font-size: 12px;
+        padding: 10px;
+        border-radius: 14px;
+        bottom: calc(100% + 8px);
+    }
+}
+
+
+@media (max-width: 420px) {
+    .cabecalho {
+        padding: 15px 12px;
+        gap: 12px;
+        min-height: auto;
+    }
+    .logo {
+        margin-left: 0;
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .logo h2 {
+        font-size: 28px;
+        transform: scaleY(0.8);
+    }
+    .logo img {
+        width: 30px;
+    }
+    .menu {
+        margin-right: 0;
+        gap: 8px;
+        justify-content: center;
+        width: 100%;
+    }
+    .menu a,
+    .menu button {
+        font-size: 11px;
+        padding: 4px 10px;
+        border-width: 1.5px;
+        border-radius: 999px;
+    }
+    .linguagemBotoes {
+        margin-left: 0;
+        justify-content: center;
+        width: 100%;
+        gap: 4px;
+        flex-wrap: wrap;
+    }
+    .linguagemBt {
+        margin-left: 0;
+        min-width: 70px;
+        padding: 8px 6px;
+        font-size: 11px;
+        border-radius: 8px;
+    }
+
+    .inicio {
+        padding: 25px 15px 30px;
+        min-height: 380px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .inicio::before {
+        height: 18px;
+    }
+    .inicio::after {
+        height: 25px;
+    }
+    .titulo {
+        padding: 10px 0;
+        min-width: auto;
+        width: 100%;
+    }
+    .titulo h1 {
+        font-size: 26px;
+        transform: scaleY(0.8);
+        letter-spacing: -1px;
+        margin-bottom: 10px;
+    }
+    .titulo p {
+        font-size: 15px;
+        line-height: 1.4;
+        max-width: 100%;
+        margin: 8px auto 16px;
+    }
+    .titulo a {
+        padding: 10px 28px;
+        font-size: 16px;
+        border-radius: 50px;
+        display: inline-block;
+    }
+    .imagem {
+        margin-top: 10px;
+        min-width: auto;
+        width: 100%;
+    }
+    .imagem img {
+        max-width: 180px;
+    }
+
+    .conteudo {
+        padding: 30px 15px 25px;
+        min-height: auto;
+    }
+    .conteudo h2 {
+        font-size: 24px;
+        margin-bottom: 25px;
+        letter-spacing: -0.5px;
+    }
+    .etapas {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .item {
+        padding: 16px 18px;
+        border-left-width: 5px;
+        border-radius: 14px;
+    }
+    .item h3 {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+    .item p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .final {
+        padding: 25px 15px 35px;
+        min-height: auto;
+    }
+    .final::before {
+        height: 25px;
+        top: -1px;
+        left: 0;
+        clip-path: polygon(0 100%, 0 0, 50% 0, 60% 100%, 100% 100%);
+    }
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .mais-informacoes {
+        padding: 18px 16px;
+        border-radius: 14px;
+    }
+    .mais-informacoes h3 {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+    .mais-informacoes p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    .curiosidade {
+        padding: 18px 16px;
+        border-radius: 14px;
+    }
+    .curiosidade h2 {
+        font-size: 20px;
+        letter-spacing: 1px;
+        margin-bottom: 8px;
+    }
+    .curiosidade p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    .botao {
+        padding: 18px 16px;
+        border-radius: 14px;
+        gap: 12px;
+    }
+    .botao p {
+        font-size: 15px;
+        line-height: 1.4;
+    }
+    .botao a {
+        font-size: 15px;
+        padding: 6px 22px;
+        border-width: 1.5px;
+    }
+
+    .rodape {
+        padding: 20px 12px 15px;
+        gap: 18px;
+        min-height: 220px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .rodape::before {
+        height: 120px;
+        clip-path: polygon(
+            0 15%,
+            12% 15%,
+            22% 4%,
+            78% 4%,
+            88% 15%,
+            100% 15%,
+            100% 100%,
+            0 100%
+        );
+    }
+    .rodape button {
+        width: 160px;
+        height: 50px;
+        font-size: 17px;
+        border-width: 2px;
+        border-radius: 40px;
+    }
+    .rodape img {
+        width: 100px;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        margin: 5px auto;
+    }
+    .botao-info {
+        font-size: 13px;
+    }
+    .informacao {
+        width: 200px;
+        font-size: 12px;
+        padding: 10px;
+        border-radius: 14px;
+        bottom: calc(100% + 8px);
+    }
+}
+
+
+@media (max-width: 414px) {
+    .cabecalho {
+        padding: 15px 12px;
+        gap: 12px;
+    }
+    .logo h2 {
+        font-size: 28px;
+        transform: scaleY(0.8);
+    }
+    .logo img {
+        width: 30px;
+    }
+    .menu {
+        gap: 8px;
+        width: 100%;
+    }
+    .menu a,
+    .menu button {
+        font-size: 11px;
+        padding: 4px 10px;
+    }
+    .linguagemBotoes {
+        gap: 4px;
+    }
+    .linguagemBt {
+        min-width: 70px;
+        padding: 8px 6px;
+        font-size: 11px;
+    }
+
+    .inicio {
+        padding: 25px 15px 30px;
+        min-height: 380px;
+    }
+    .texto h1 {
+        font-size: 26px;
+        letter-spacing: -1px;
+    }
+    .texto h2 {
+        font-size: 24px;
+        letter-spacing: 1px;
+    }
+    .texto p {
+        font-size: 15px;
+    }
+    .imagem img {
+        max-width: 180px;
+    }
+
+    .abordagem {
+        padding: 45px 15px;
+        gap: 25px;
+    }
+    .abordagem .descricao h2 {
+        font-size: 26px;
+    }
+    .descricao span {
+        font-size: 22px;
+    }
+    .abordagem .descricao p {
+        font-size: 15px;
+    }
+    .carrossel__card {
+        height: 290px;
+        font-size: 19px;
+        padding-top: 45px;
+        padding-left: 20px;
+    }
+    .cards h2 {
+        font-size: 20px;
+    }
+    .card {
+        padding: 18px 15px;
+    }
+    .card h3 {
+        font-size: 18px;
+    }
+    .card p {
+        font-size: 14px;
+    }
+    .teste h2 {
+        font-size: 21px;
+    }
+    .caixa-texto {
+        width: 94%;
+    }
+    .caixa-texto p {
+        font-size: 14px;
+    }
+    .rodape {
+        padding: 20px 12px 15px;
+        gap: 18px;
+        min-height: 220px;
+    }
+    .rodape button {
+        width: 160px;
+        height: 50px;
+        font-size: 17px;
+    }
+    .rodape img {
+        width: 100px;
+    }
+    .informacao {
+        width: 200px;
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 393px) {
+    .cabecalho {
+        padding: 12px 10px;
+        gap: 10px;
+    }
+    .logo h2 {
+        font-size: 27px;
+    }
+    .logo img {
+        width: 28px;
+    }
+    .menu {
+        gap: 7px;
+    }
+    .menu a,
+    .menu button {
+        font-size: 10.5px;
+        padding: 4px 9px;
+    }
+    .linguagemBt {
+        min-width: 65px;
+        padding: 7px 5px;
+        font-size: 10.5px;
+    }
+
+    .inicio {
+        padding: 23px 13px 28px;
+    }
+    .texto h1 {
+        font-size: 25px;
+    }
+    .texto h2 {
+        font-size: 23px;
+    }
+    .texto p {
+        font-size: 14.5px;
+    }
+    .imagem img {
+        max-width: 175px;
+    }
+
+    .abordagem {
+        padding: 43px 13px;
+    }
+    .abordagem .descricao h2 {
+        font-size: 25px;
+    }
+    .descricao span {
+        font-size: 21px;
+    }
+    .abordagem .descricao p {
+        font-size: 14.5px;
+    }
+    .carrossel__card {
+        height: 280px;
+        font-size: 18px;
+        padding-top: 43px;
+        padding-left: 18px;
+    }
+    .card {
+        padding: 17px 14px;
+    }
+    .card h3 {
+        font-size: 17px;
+    }
+    .card p {
+        font-size: 13.5px;
+    }
+    .teste {
+        padding: 28px 12px;
+    }
+    .teste h2 {
+        font-size: 20px;
+    }
+    .caixa-texto p {
+        font-size: 13.5px;
+    }
+    .rodape {
+        gap: 16px;
+        min-height: 210px;
+    }
+    .rodape button {
+        width: 155px;
+        height: 48px;
+        font-size: 16px;
+    }
+    .rodape img {
+        width: 95px;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .cabecalho {
+        padding: 10px 8px;
+        gap: 8px;
+    }
+    .logo h2 {
+        font-size: 26px;
+    }
+    .logo img {
+        width: 25px;
+    }
+    .menu {
+        gap: 6px;
+    }
+    .menu a,
+    .menu button {
+        font-size: 10px;
+        padding: 3px 8px;
+        border-width: 1px;
+    }
+    .linguagemBt {
+        min-width: 60px;
+        padding: 6px 4px;
+        font-size: 10px;
+        border-width: 1.5px;
+    }
+
+    .inicio {
+        padding: 20px 12px;
+        min-height: 300px;
+    }
+    .texto h1 {
+        font-size: 24px;
+    }
+    .texto h2 {
+        font-size: 22px;
+        letter-spacing: 1px;
+    }
+    .texto p {
+        font-size: 14px;
+        line-height: 1.3;
+    }
+    .imagem img {
+        max-width: 170px;
+    }
+
+    .abordagem {
+        padding: 40px 12px;
+        gap: 20px;
+    }
+    .abordagem .descricao h2 {
+        font-size: 24px;
+    }
+    .descricao span {
+        font-size: 20px;
+    }
+    .abordagem .descricao p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+    .abordagem::after {
+        height: 20px;
+    }
+    .carrossel__card {
+        height: 270px;
+        font-size: 18px;
+        padding-top: 40px;
+        padding-left: 18px;
+        border-radius: 25px;
+    }
+    .carrossel__nav {
+        padding: 10px 0;
+    }
+    .carrossel__botao {
+        width: 30px;
+        height: 4px;
+        margin: 0 2px;
+    }
+    .cards h2 {
+        font-size: 18px;
+    }
+    .card {
+        padding: 15px 12px;
+    }
+    .card h3 {
+        font-size: 16px;
+    }
+    .card p {
+        font-size: 13px;
+    }
+    .teste {
+        padding: 25px 10px;
+    }
+    .teste h2 {
+        font-size: 19px;
+        margin-bottom: 25px;
+    }
+    .teste::before {
+        left: 10px;
+        right: 10px;
+        top: 12px;
+        bottom: 20px;
+        border-radius: 12px;
+    }
+    .caixa-texto {
+        padding: 15px 12px;
+        border-radius: 16px;
+    }
+    .caixa-texto p {
+        font-size: 13px;
+    }
+    .conteudo a {
+        width: 150px;
+        height: 45px;
+        font-size: 17px;
+        padding-top: 7px;
+    }
+
+    .rodape {
+        padding: 20px 10px 15px;
+        gap: 15px;
+        min-height: 200px;
+    }
+    .rodape::before {
+        height: 110px;
+    }
+    .rodape button {
+        width: 140px;
+        height: 44px;
+        font-size: 15px;
+    }
+    .rodape img {
+        width: 85px;
+    }
+    .informacao {
+        width: 170px;
+        font-size: 11px;
+        padding: 8px;
+    }
+}
+
+
+@media (max-width: 360px) {
+    .cabecalho {
+        padding: 10px 5px;
+    }
+    .logo {
+        gap: 5px;
+    }
+    .logo h2 {
+        font-size: 22px;
+    }
+    .logo img {
+        width: 23px;
+    }
+    .menu {
+        gap: 2px;
+    }
+    .menu a,
+    .menu button {
+        font-size: 7px;
+        padding: 4px 6px;
+    }
+    .linguagemBt {
+        font-size: 7px;
+        min-width: 55px;
+        padding: 6px;
+    }
+
+    .inicio {
+        padding: 15px 5px;
+        min-height: 280px;
+    }
+    .texto h1 {
+        font-size: 20px;
+    }
+    .texto h2 {
+        font-size: 19px;
+        letter-spacing: 0;
+    }
+    .texto p {
+        font-size: 13px;
+    }
+    .imagem img {
+        max-width: 150px;
+    }
+
+    .abordagem {
+        padding: 35px 10px;
+    }
+    .abordagem .descricao h2 {
+        font-size: 20px;
+    }
+    .descricao span {
+        font-size: 18px;
+    }
+    .abordagem .descricao p {
+        font-size: 13px;
+    }
+    .carrossel__card {
+        height: 240px;
+        font-size: 16px;
+        padding-top: 35px;
+        padding-left: 15px;
+        border-radius: 20px;
+    }
+    .carrossel__botao {
+        width: 25px;
+        height: 3px;
+        margin: 0 2px;
+    }
+    .card {
+        padding: 12px 10px;
+    }
+    .card h3 {
+        font-size: 15px;
+    }
+    .card p {
+        font-size: 12px;
+    }
+    .teste h2 {
+        font-size: 17px;
+    }
+    .caixa-texto p {
+        font-size: 12px;
+    }
+    .conteudo a {
+        width: 130px;
+        height: 40px;
+        font-size: 15px;
+        padding-top: 6px;
+    }
+
+    .rodape {
+        gap: 12px;
+        padding: 18px 8px 12px;
+        min-height: 180px;
+    }
+    .rodape::before {
+        height: 110px;
+    }
+    .rodape button {
+        width: 120px;
+        height: 40px;
+        font-size: 13px;
+    }
+    .rodape img {
+        width: 75px;
+    }
+    .informacao {
+        width: 160px;
+        font-size: 10px;
+        padding: 6px;
+    }
+}
