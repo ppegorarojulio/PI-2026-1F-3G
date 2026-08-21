@@ -10,31 +10,29 @@ body{
     background-color: white;
 }
 
-.cabecalho {
+.cabecalho{
     width: 100%;
-    min-height: 115px;
+    height: 115px;
     background: linear-gradient(to right, #fb3650, #812834);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 25px 25px;
-    flex-wrap: wrap;
-    gap: 20px;
 }
 
-.logo {
+.logo{
     display: flex;
     align-items: center;
     gap: 12px;
     margin-left: 50px;
 }
 
-.logo img {
+.logo img{
     width: 45px;
     height: auto;
 }
 
-.logo h2 {
+.logo h2{
     color: white;
     font-size: 55px;
     letter-spacing: -2px;
@@ -43,12 +41,21 @@ body{
     font-weight: 800;
 }
 
-.menu {
+.menu{
     display: flex;
     gap: 50px;
     margin-right: 50px;
-    flex-wrap: wrap;
-    justify-content: center;
+}
+
+.menu button{
+    background: transparent;
+    color:white;
+    border: 2px solid white;
+    border-radius: 999px;
+    padding: 8px 30px;
+    cursor: pointer;
+    transition: .3s;
+    font-size: 20px;
 }
 
 .menu a {
@@ -80,7 +87,7 @@ body{
 .linguagemBt {
     margin-left: 75px;
     min-width: 100px;
-    width: 100%;
+    width:100%;
     padding: 12px 12px;
     border: 2px solid #333;
     background: white;
@@ -100,7 +107,7 @@ body{
     background: #4CAF50;
     color: white;
     border-color: #208123;
-} b 
+}
 
 .inicio{
     background: #0f2c58;
