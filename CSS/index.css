@@ -167,9 +167,10 @@ body {
 
 .carrossel {
     position: relative;
-    flex: 0 1 600px;
+    flex: 0 1 650px;
     min-width: 0;
     margin-left: 0;
+    cursor: pointer;
 }
 
 .carrossel__card {
@@ -218,6 +219,10 @@ body {
 .carrossel__botao-presente {
     background: rgba(196, 16, 16, 0.5);
 }
+
+/*
+ CSS do carrosel / js
+*/
 
 .abordagem {
     display: flex;
