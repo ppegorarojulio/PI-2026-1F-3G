@@ -170,6 +170,7 @@ body {
     flex: 0 1 650px;
     min-width: 0;
     margin-left: 0;
+
 }
 
 .carrossel__card {
@@ -184,7 +185,13 @@ body {
     font-size: 40px;
     border-radius: 50px;
     display: none;
-    box-shadow: rgb(221, 221, 221) 10px 5px 5px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.151);
+}
+
+.carrossel__card a {
+    text-decoration: none;
+    color: inherit;         
+    display: block;    
 }
 
 .carrossel__card h3 {
@@ -213,6 +220,18 @@ body {
 
 .carrossel__card-presente {
     display: block;
+}
+
+.carrossel__card-presente:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.25);
+    transition-duration: 1s ;
+}
+
+.carrossel__card-presente a:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 2.5px;
+    text-decoration-color: (15, 44, 88);
 }
 
 .carrossel__botao-presente {
