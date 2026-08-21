@@ -908,3 +908,278 @@ body {
         padding: 12px;
     }
 }
+
+@media (max-width: 414px) {
+    .cabecalho {
+        padding: 15px 10px;
+        gap: 15px;
+    }
+    .logo {
+        gap: 8px;
+    }
+    .logo img {
+        width: 30px;
+    }
+    .logo h2 {
+        font-size: 30px;
+    }
+    .menu {
+        width: 100%;
+        gap: 8px;
+        margin: 0;
+    }
+    .menu a {
+        font-size: 11px;
+        padding: 5px 10px;
+    }
+    .inicio {
+        padding: 50px 15px;
+        min-height: 600px;
+    }
+    .texto h1 {
+        font-size: 27px;
+    }
+    .texto h2 {
+        font-size: 25px;
+        letter-spacing: 1px;
+    }
+    .texto p {
+        font-size: 15px;
+        line-height: 1.4;
+    }
+    .imagem img {
+        max-width: 190px;
+    }
+    .abordagem {
+        padding: 55px 15px;
+        gap: 30px;
+    }
+    .abordagem .descricao h2 {
+        font-size: 28px;
+    }
+    .abordagem .descricao p {
+        font-size: 17px;
+    }
+    .carrossel {
+        width: 100%;
+        max-width: 100%;
+    }
+    .carrossel__card {
+        width: 100%;
+        height: 330px;
+        margin: 0;
+        padding: 50px 18px 20px;
+        font-size: 21px;
+        border-radius: 30px;
+    }
+    .carrossel__nav {
+        width: 100%;
+        padding: 12px 0;
+    }
+    .carrossel__botao {
+        width: 35px;
+        margin: 0 2px;
+    }
+    .cards {
+        min-width: 0;
+    }
+    .cards h2 {
+        margin-left: 0;
+        font-size: 25px;
+    }
+    .teste {
+        padding: 35px 12px;
+    }
+    .teste::before {
+        left: 12px;
+        right: 12px;
+    }
+    .caixa-texto {
+        width: 94%;
+        padding: 18px 12px;
+    }
+    .caixa-texto p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 393px) {
+    .logo h2 {
+        font-size: 28px;
+    }
+    .menu {
+        gap: 6px;
+    }
+    .menu a {
+        font-size: 10px;
+        padding: 5px 9px;
+    }
+    .texto h1 {
+        font-size: 25px;
+    }
+    .texto h2 {
+        font-size: 23px;
+        letter-spacing: 1px;
+    }
+    .texto p {
+        font-size: 14px;
+    }
+    .imagem img {
+        max-width: 175px;
+    }
+    .abordagem {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .abordagem .descricao h2 {
+        font-size: 26px;
+    }
+    .abordagem .descricao p {
+        font-size: 16px;
+    }
+    .carrossel__card {
+        height: 310px;
+        padding: 45px 16px 18px;
+        font-size: 20px;
+    }
+    .carrossel__botao {
+        width: 32px;
+    }
+}
+
+@media (max-width: 375px) {
+    .cabecalho {
+        padding: 12px 8px;
+    }
+    .logo img {
+        width: 27px;
+    }
+    .logo h2 {
+        font-size: 26px;
+    }
+    .menu a {
+        font-size: 9px;
+        padding: 4px 8px;
+    }
+    .inicio {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .texto h1 {
+        font-size: 23px;
+    }
+    .texto h2 {
+        font-size: 21px;
+        letter-spacing: 0;
+    }
+    .texto p {
+        font-size: 13px;
+    }
+    .imagem img {
+        max-width: 160px;
+    }
+    .abordagem {
+        padding: 50px 10px;
+    }
+    .abordagem .descricao h2 {
+        font-size: 24px;
+    }
+    .abordagem .descricao p {
+        font-size: 15px;
+    }
+    .carrossel__card {
+        height: 290px;
+        padding: 40px 14px 15px;
+        font-size: 18px;
+        border-radius: 25px;
+    }
+    .carrossel__botao {
+        width: 30px;
+        margin: 0 1px;
+    }
+    .card {
+        padding: 18px 15px;
+    }
+    .card h3 {
+        font-size: 20px;
+    }
+    .card p {
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 360px) {
+    .logo h2 {
+        font-size: 24px;
+    }
+
+    .logo img {
+        width: 25px;
+    }
+
+    .menu {
+        gap: 4px;
+    }
+
+    .menu a {
+        font-size: 8px;
+        padding: 4px 7px;
+    }
+
+    .texto h1 {
+        font-size: 21px;
+    }
+
+    .texto h2 {
+        font-size: 19px;
+    }
+
+    .texto p {
+        font-size: 12px;
+    }
+    .imagem img {
+        max-width: 145px;
+    }
+    .abordagem {
+        padding: 45px 8px;
+        gap: 25px;
+    }
+    .abordagem .descricao h2 {
+        font-size: 22px;
+    }
+    .abordagem .descricao p {
+        font-size: 14px;
+    }
+    .carrossel__card {
+        height: 270px;
+        padding: 35px 12px 12px;
+        font-size: 17px;
+        border-radius: 22px;
+    }
+    .carrossel__nav {
+        padding: 10px 0;
+    }
+    .carrossel__botao {
+        width: 27px;
+        height: 4px;
+        margin: 0 1px;
+    }
+    .cards {
+        gap: 15px;
+    }
+    .card {
+        padding: 15px 12px;
+    }
+    .teste {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .caixa-texto {
+        width: 96%;
+        padding: 15px 10px;
+    }
+    .caixa-texto p {
+        font-size: 14px;
+    }
+}
