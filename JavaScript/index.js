@@ -41,7 +41,7 @@ document.querySelectorAll(".carrossel").forEach((carrossel) => {
   window.addEventListener('touchstart', (event) => {
     comecoToque = event.changedTouches[0].screenX
   });
- window.addEventListener('touchstart', (event) => {
+ window.addEventListener('touchend', (event) => {
     fimToque = event.changedTouches[0].screenX
     arraste()
   })
