@@ -53,6 +53,41 @@
             <p data-translate="interativa.passo3_desc">Veja o resultado final ou baixe-o.</p>
         </div>
     </div>
+    <div class="teste">
+        <h2 data-translate="teste.titulo">Faça você mesmo!</h2>
+        <div class="caixa-texto">
+            <p>Dê Upload do vídeo (mp4) e selecione o trecho que você queira dublar, após isso clique em Ouvir Trecho para saber suas falas e clique em Começar Dublagem e tente sincroniza-las com as ondas de aúdio</p><br>
+            <p>Depois veja o resultado e baixe se quiser compartilhar com amigos</p>
+            <input class="arquivoVideo" type="file" accept="video/*" />
+            <video class="video" controls></video>
+            <div class="tempos">
+                <div>
+                    <label for="inicio">Início do trecho (segundos)</label>
+                    <input id="inicio" type="number" min="0" step="0.1" value="0" />
+                </div>
+                <div>
+                    <label for="fim">Fim do trecho (segundos)</label>
+                    <input id="fim" type="number" min="0" step="0.1" value="0" />
+                </div>
+            </div>
+            <canvas class="onda"></canvas>
+            <div class="botoes botoes-js">
+                <button class="bt ouvirOriginal">Ouvir original</button>
+                <button class="bt dublar">Começar dublagem</button>
+                <button class="bt parar">Parar</button>
+            </div>
+                <p class="status">Envie um vídeo para começar.</p>
+            <div class="resultado">
+                <h2>Resultado da dublagem</h2>
+                <button class="bt modo CSom">Modo 1</button>
+                <button class="bt modo SSom">Modo 2</button>
+                <video class="bt videoResultado" playsinline></video>
+                <button class="bt ouvir">Assistir dublagem</button>
+                <button class="bt baixarVideo">Baixar vídeo dublado</button>
+                <audio class="audioDublado"></audio>
+            </div>
+        </div>
+    </div>
 
     <footer class="rodape">
         <div class="botao-info">
@@ -77,5 +112,6 @@
     </footer>
 
     <script src="../JavaScript/traducao_inform.js"></script>
+    <script src="../JavaScript/dublar.js"></script>
 </body>
 </html>

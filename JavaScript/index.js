@@ -90,7 +90,7 @@ const traducoes = {
         'footer.sobre': 'Sobre Nós',
         'footer.sobre_texto': '📍Nós somos estudantes do Primeiro Ano do EM do Instituto Federal Catarinense - Campus Concórdia, cursamos informática para internet. Criamos esse site com o intuito de disponibilizar informações.',
         'footer.contato': 'Contato',
-        'footer.contato_texto': '✉️ 3gruppi@gmail.com'
+        'footer.contato_texto': '✉️ 3grupopi@gmail.com'
     },
     
     'en': {
