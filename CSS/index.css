@@ -182,7 +182,7 @@ body {
     text-transform: uppercase;
     transform: scaleY(0.5);
     line-height: 0.8;
-    margin-top: -30;
+    margin-top: -10px;
     margin-bottom: 15px;
 }
 
@@ -207,7 +207,7 @@ body {
 }
 
 .carrossel__card {
-    margin-top: -100px;
+    margin-top: 0px;
     position: relative;
     text-align: left;
     padding-left: 25px;
@@ -307,6 +307,14 @@ body {
     max-width: 585px;
     flex: 1 1 0%;
     min-width: 260px;
+    margin-top: 100px;
+}
+
+.abordagem span {
+    font-size: 28px;
+    line-height: 1.6;
+    color: red;
+    font-weight: 400;
 }
 
 .abordagem .descricao h2 {
@@ -317,11 +325,7 @@ body {
     line-height: 1.1;
 }
 
-.descricao span {
-    color: rgb(211, 3, 3);
-    font-size: 35px;
-    font-weight: 720;
-}
+
 
 .abordagem .descricao p {
     font-size: 28px;
