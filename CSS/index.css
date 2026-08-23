@@ -381,7 +381,6 @@ body {
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
-    transform: translateX(-300px);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
     text-decoration: none;
     text-align: center;
@@ -390,7 +389,7 @@ body {
 
 .conteudo a:hover {
     background-color: #e61d49;
-    transform: translateX(-300px) scale(1.03);
+    transform: scale(1.03);
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5);
 }
 

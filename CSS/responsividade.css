@@ -58,12 +58,6 @@
     .cards {
         gap: 50px;
     }
-    .conteudo a {
-        transform: translateX(-200px);
-    }
-    .conteudo a:hover {
-        transform: translateX(-200px) scale(1.03);
-    }
     .rodape {
         gap: 150px;
         padding: 50px 20px 30px;
@@ -329,12 +323,9 @@
         width: 250px;
         height: 70px;
         font-size: 28px;
-        transform: translateX(0);
         padding-top: 12px;
     }
-    .conteudo a:hover {
-        transform: translateX(0) scale(1.03);
-    }
+    
     .rodape {
         display: flex;
         flex-direction: row;
