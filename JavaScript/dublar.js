@@ -1,4 +1,4 @@
-import { mudarLingua } from './traducao_inform.js';
+import { mudarLingua } from './traducao_interativa.js';
 
 const arquivoVideo = document.querySelector(".arquivoVideo")
 const video = document.querySelector(".video")
