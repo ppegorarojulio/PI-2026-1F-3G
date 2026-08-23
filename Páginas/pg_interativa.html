@@ -56,34 +56,34 @@
     <div class="teste">
         <h2 data-translate="teste.titulo">Faça você mesmo!</h2>
         <div class="caixa-texto">
-            <p>Dê Upload do vídeo (mp4) e selecione o trecho que você queira dublar, após isso clique em Ouvir Trecho para saber suas falas e clique em Começar Dublagem e tente sincroniza-las com as ondas de aúdio</p><br>
-            <p>Depois veja o resultado e baixe se quiser compartilhar com amigos</p>
+            <p data-translate="projeto.tutorial">Dê Upload do vídeo (mp4) e selecione o trecho que você queira dublar, após isso clique em Ouvir Trecho para saber suas falas e clique em Começar Dublagem e tente sincroniza-las com as ondas de aúdio</p><br>
+            <p data-translate="projeto.tutorial2">Depois veja o resultado e baixe se quiser compartilhar com amigos</p>
             <input class="arquivoVideo" type="file" accept="video/*" />
             <video class="video" controls></video>
             <div class="tempos">
                 <div>
-                    <label for="inicio">Início do trecho (segundos)</label>
+                    <label for="inicio" data-translate="projeto.inicio">Início do trecho (segundos)</label>
                     <input id="inicio" type="number" min="0" step="0.1" value="0" />
                 </div>
                 <div>
-                    <label for="fim">Fim do trecho (segundos)</label>
+                    <label for="fim" data-translate="projeto.fim">Fim do trecho (segundos)</label>
                     <input id="fim" type="number" min="0" step="0.1" value="0" />
                 </div>
             </div>
             <canvas class="onda"></canvas>
             <div class="botoes botoes-js">
-                <button class="bt ouvirOriginal">Ouvir original</button>
-                <button class="bt dublar">Começar dublagem</button>
-                <button class="bt parar">Parar</button>
+                <button class="bt ouvirOriginal" data-translate="projeto.ouvir">Ouvir original</button>
+                <button class="bt dublar" data-translate="projeto.comecar">Começar dublagem</button>
+                <button class="bt parar" data-translate="projeto.parar">Parar</button>
             </div>
-                <p class="status">Envie um vídeo para começar.</p>
+                <p class="status" data-translate="projeto.status">Envie um vídeo para começar.</p>
             <div class="resultado">
-                <h2>Resultado da dublagem</h2>
-                <button class="bt modo CSom">Modo 1</button>
-                <button class="bt modo SSom">Modo 2</button>
+                <h2 data-translate="projeto.resultado">Resultado da dublagem</h2>
+                <button class="bt modo CSom" data-translate="projeto.modo1">Modo 1</button>
+                <button class="bt modo SSom" data-translate="projeto.modo2">Modo 2</button>
                 <video class="bt videoResultado" playsinline></video>
-                <button class="bt ouvir">Assistir dublagem</button>
-                <button class="bt baixarVideo">Baixar vídeo dublado</button>
+                <button class="bt ouvir" data-translate="projeto.assistirDublagem">Assistir dublagem</button>
+                <button class="bt baixarVideo" data-translate="projeto.baixar">Baixar vídeo dublado</button>
                 <audio class="audioDublado"></audio>
             </div>
         </div>
@@ -112,6 +112,6 @@
     </footer>
 
     <script src="../JavaScript/traducao_inform.js"></script>
-    <script src="../JavaScript/dublar.js"></script>
+    <script type="module" src="../JavaScript/dublar.js"></script>
 </body>
 </html>

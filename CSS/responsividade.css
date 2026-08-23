@@ -891,7 +891,7 @@
         padding-top: 50px;
         padding-left: 20px;
         border-radius: 30px;
-        margin-top: -50px;
+        margin-top: 10px;
     }
     .carrossel__nav {
         padding: 12px 0;
@@ -947,6 +947,7 @@
         padding: 10px;
         border-radius: 14px;
         bottom: calc(100% + 8px);
+        opacity: 1;
     }
 }
 

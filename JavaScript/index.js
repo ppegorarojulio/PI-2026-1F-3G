@@ -36,13 +36,33 @@ document.querySelectorAll(".carrossel").forEach((carrossel) => {
       atualizarCarrossel(indexAtual - 1);
   }
   });
-  
+  let comecoToque = 0;
+  let fimToque = 0;
+  window.addEventListener('touchstart', (event) => {
+    comecoToque = event.changedTouches[0].screenX
+  });
+ window.addEventListener('touchstart', (event) => {
+    fimToque = event.changedTouches[0].screenX
+    arraste()
+  })
+
+  function arraste() {
+    const distanciaMin = 50; 
+    const diferenca = comecoToque - fimToque;
+
+    if (Math.abs(diferenca) > distanciaMin) {
+      if (diferenca > 0) {
+        atualizarCarrossel(indexAtual + 1);
+      } else {
+        atualizarCarrossel(indexAtual - 1);
+      }
+    }
+  }
  botoes.forEach((botao, i) => {
     botao.addEventListener('click', () => {
       atualizarCarrossel(i);
     });
   });
-
  
   items[0].classList.add("carrossel__card-presente");
   botoes[0].classList.add("carrossel__botao-presente");

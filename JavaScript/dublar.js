@@ -1,3 +1,5 @@
+import { mudarLingua } from './traducao_inform.js';
+
 const arquivoVideo = document.querySelector(".arquivoVideo")
 const video = document.querySelector(".video")
 const tempos = document.querySelector(".tempos")
@@ -310,8 +312,9 @@ const volume_original = 0.15;
 
         resultado.style.display = "block";
 
-        mensagemStatus.textContent =
-          "Dublagem salva. Você já pode assistir ou baixar o vídeo."
+        mensagemStatus.textContent ="Dublagem salva. Você já pode assistir ou baixar o vídeo."
+        mensagemStatus.setAttribute("data-translate", "projeto.status1");
+        mudarLingua()
       });
 
       gravadorAudio.start();
@@ -482,8 +485,9 @@ const volume_original = 0.15;
         link.click();
         link.remove();
 
-        mensagemStatus.textContent =
-          "Vídeo dublado baixado com sucesso.";
+        mensagemStatus.textContent ="Vídeo dublado baixado com sucesso.";
+        mensagemStatus.setAttribute("data-translate", "projeto.status2");
+        mudarLingua(),
 
         baixarVideoBotao.disabled = false;
         baixarVideoBotao.textContent = "Baixar vídeo dublado";
@@ -546,6 +550,8 @@ const volume_original = 0.15;
         audioBuffer = await audioContext.decodeAudioData(dados);
 
         mensagemStatus.textContent = "Vídeo carregado.";
+        mensagemStatus.setAttribute("data-translate", "projeto.status3");
+        mudarLingua();
 
         if (Math.floor(video.duration)) {
           prepararOnda();
@@ -554,8 +560,9 @@ const volume_original = 0.15;
       } catch (erro) {
         console.error(erro);
 
-        mensagemStatus.textContent =
-          "Não foi possível ler o áudio deste vídeo.";
+        mensagemStatus.textContent ="Não foi possível ler o áudio deste vídeo.";
+        mensagemStatus.setAttribute("data-translate", "projeto.status4");
+        mudarLingua();
       }
     });
 
@@ -580,8 +587,9 @@ const volume_original = 0.15;
       ) {
         pararOriginal();
 
-        mensagemStatus.textContent =
-          "Trecho original finalizado. Agora você pode dublar.";
+        mensagemStatus.textContent ="Trecho original finalizado. Agora você pode dublar.";
+        mensagemStatus.setAttribute("data-translate", "projeto.status5");
+        mudarLingua();
       }
     });
 
@@ -616,6 +624,8 @@ const volume_original = 0.15;
       await video.play();
 
       mensagemStatus.textContent = "Ouvindo o áudio original.";
+      mensagemStatus.setAttribute("data-translate", "projeto.status6");
+      mudarLingua()
     });
 
     dublarBotao.addEventListener("click", async () => {
@@ -624,6 +634,8 @@ const volume_original = 0.15;
 
       if (!trecho) {
         mensagemStatus.textContent = "Escolha um trecho válido.";
+        mensagemStatus.setAttribute("data-translate", "projeto.status7");
+        mudarLingua();
         return;
       }
 
@@ -658,8 +670,9 @@ const volume_original = 0.15;
 
         await video.play();
 
-        mensagemStatus.textContent =
-          "O vídeo está sem som para você fazer a dublagem.";
+        mensagemStatus.textContent = "O vídeo está sem som para você fazer a dublagem.";
+        mensagemStatus.setAttribute("data-translate", "projeto.status8");
+        mudarLingua(),
 
         atualizar();
       } catch (erro) {
@@ -673,8 +686,9 @@ const volume_original = 0.15;
           audioContext.currentTime
         );
 
-        mensagemStatus.textContent =
-          "Não foi possível iniciar o microfone.";
+        mensagemStatus.textContent = "Não foi possível iniciar o microfone.";
+        mensagemStatus.setAttribute("data-translate", "projeto.status9");
+        mudarLingua();
       }
     });
 
@@ -684,6 +698,8 @@ const volume_original = 0.15;
       } else {
         pararOriginal();
         mensagemStatus.textContent = "Reprodução interrompida.";
+        mensagemStatus.setAttribute("data-translate", "projeto.status10");
+        mudarLingua();
       }
     });
 
