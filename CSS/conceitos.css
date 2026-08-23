@@ -74,7 +74,7 @@ body {
 .linguagemBotoes {
     display: flex;
     gap: 2px;
-    margin-left: auto;
+    margin-left: 75px;
 }
 
 .linguagemBt {
