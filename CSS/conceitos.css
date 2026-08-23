@@ -73,7 +73,7 @@ body {
 
 .linguagemBotoes {
     display: flex;
-    gap: 5px;
+    gap: 2px;
     margin-left: auto;
 }
 
