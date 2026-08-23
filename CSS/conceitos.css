@@ -104,13 +104,14 @@ body {
 
 .inicio {
     background: #0f2c58;
-    min-height: 500px;
+    height: 600px;
+    min-height: 600px;
     position: relative;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 60px 60px;
+    padding: 60px;
     flex-wrap: wrap;
 }
 
