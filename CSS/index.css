@@ -156,6 +156,7 @@ body {
     min-width: 280px;
     padding: 25px 0;
     z-index: 1;
+    align-self: flex-start;
 }
 
 /* CORREÇÃO: Ajuste nos textos para não sobrepor */
@@ -169,6 +170,7 @@ body {
     transform: scaleY(0.5);
     line-height: 0.8;
     margin-bottom: 10px;
+    line-height: 1.2;
 }
 
 .texto h2 {
@@ -180,7 +182,7 @@ body {
     text-transform: uppercase;
     transform: scaleY(0.5);
     line-height: 0.8;
-    margin-top: 0;
+    margin-top: -30;
     margin-bottom: 15px;
 }
 
