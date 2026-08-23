@@ -104,14 +104,13 @@ body {
 
 .inicio {
     background: #0f2c58;
-    height: 600px;
     min-height: 600px;
     position: relative;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 60px;
+    padding: 40px 60px;
     flex-wrap: wrap;
 }
 
@@ -190,7 +189,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1;
 }
 
 .imagem img {
