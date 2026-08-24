@@ -47,7 +47,6 @@ const volume_original = 0.15;
     let trechoGravado;
     let picosVideo = [];
     let picosDublagem = [];
-    let ultimoIndice = -1;
     let modoComSom = true;
     let reproduzindoResultado = false;
 
